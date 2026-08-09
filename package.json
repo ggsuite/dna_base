@@ -1,6 +1,6 @@
 {
   "name": "@tssuite/base-dna",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "The base DNA of our projects - shared configs, docs, scripts and agent skills inherited by every repository via gg_dna.",
   "keywords": [
     "dna",
