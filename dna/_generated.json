@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x638843b8716a40fa"
+      "hash": "0x2da13509d5f61905"
     }
   ],
   "claude": {
@@ -51,7 +51,7 @@
     },
     {
       "path": ".vscode/extensions.json",
-      "hash": "0xc74b69f3e859342b"
+      "hash": "0x6a6ea81cc0cd2828"
     },
     {
       "path": ".vscode/settings.json",
