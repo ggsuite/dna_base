@@ -39,7 +39,7 @@ void main() {
           jsonDecode(File('package.json').readAsStringSync())
               as Map<String, dynamic>;
       expect(pkg['files'], contains('dna'));
-      expect(pkg['name'], '@tssuite/base-dna');
+      expect(pkg['name'], '@tssuite/dna-base');
     });
   });
 }
