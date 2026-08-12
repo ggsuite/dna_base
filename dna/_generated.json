@@ -7,7 +7,7 @@
       "ecosystem": null,
       "resolvedVersion": "4.1.0",
       "via": null,
-      "hash": "0xd9950b133329adb6"
+      "hash": "0x5bad0ad5ab29adb6"
     },
     {
       "name": "self",
@@ -15,14 +15,14 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xc46de66dc9ad8f24"
+      "hash": "0x5cc5afb377453ede"
     }
   ],
   "claude": {
     "claudeMdInclude": null
   },
   "baseVersion": "4.1.0",
-  "baseHash": "0xd9950b133329adb6",
+  "baseHash": "0x5bad0ad5ab29adb6",
   "hash": null,
   "instances": [
     {
@@ -51,7 +51,7 @@
     },
     {
       "path": ".vscode/extensions.json",
-      "hash": "0x42dbd078830bdf05"
+      "hash": "0xc74b69f3e859342b"
     },
     {
       "path": ".vscode/settings.json",
@@ -119,7 +119,7 @@
     },
     {
       "path": "doc/guides/dna.md",
-      "hash": "0x199fc5492364c493"
+      "hash": "0x913bdd969be6e52e"
     },
     {
       "path": "scripts/README.md",
