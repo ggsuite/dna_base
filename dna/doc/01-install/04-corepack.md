@@ -9,7 +9,7 @@ found in the LICENSE file in the root of this package.
 # Install corepack and pnpm
 
 Make sure Node is installed, on
-[Mac](./install-node-mac.md) or on [Windows](./install-node-win.md).
+[Mac](./03a-node-mac.md) or on [Windows](./03b-node-win.md).
 
 ## On Mac and Linux
 
