@@ -5,7 +5,7 @@
       "name": "base",
       "package": "gg_dna",
       "ecosystem": null,
-      "resolvedVersion": "4.1.1",
+      "resolvedVersion": "4.1.2",
       "via": null,
       "hash": "0xc10ccea46057d605"
     },
@@ -21,7 +21,7 @@
   "claude": {
     "claudeMdInclude": null
   },
-  "baseVersion": "4.1.1",
+  "baseVersion": "4.1.2",
   "baseHash": "0xc10ccea46057d605",
   "hash": null,
   "instances": [
