@@ -2,7 +2,7 @@
 // on every test run. The logic lives in the gg_dna dev-dependency and is
 // updated through normal dependency updates.
 
-import 'package:gg_dna/gg_dna.dart';
+import 'package:helix/helix.dart';
 import 'package:test/test.dart';
 
 void main() {
