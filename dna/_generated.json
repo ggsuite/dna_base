@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xa9371a20ed98f9bd"
+      "hash": "0x58d04f67e6b3c40d"
     }
   ],
   "claude": {
@@ -59,7 +59,7 @@
     },
     {
       "path": "LICENSE",
-      "hash": "0x58ed9cf06c6568b4"
+      "hash": "0x39cabbaca6d6113c"
     },
     {
       "path": "doc/01_install/01_vscode.md",
