@@ -38,7 +38,7 @@ linter:
 analyzer:
   exclude:
     # `dna/` holds DNA content, not package source.
-    - dna/**
+    # - dna/**
     # pnpm links packages into node_modules as live symlinks, so a linked
     # Dart package shows up here with its whole source tree. It is
     # analyzed in its own repository against its own dependencies; from
