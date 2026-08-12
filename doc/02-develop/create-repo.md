@@ -158,7 +158,7 @@ git checkout -b rename-classes
 ### Call rename script
 
 ```bash
-node rename_class template-project my-new-repo
+node scripts/rename-class.js template-project my-new-repo
 ```
 
 ## Edit package.json
@@ -179,14 +179,14 @@ git commit -am "Rename template-project into my-new-repo"
 ### Create and complete pull request
 
 ```bash
-node push_branch
+node scripts/push-branch.js
 gh pr create --base main --title "Rename template-project into my-new-repo" --body " "
 gh pr merge --auto --squash
-node ./wait_for_pr
+node ./scripts/wait-for-pr.js
 ```
 
 ### Delete feature branch
 
 ```bash
-node delete_feature_branch
+node scripts/delete-feature-branch.js
 ```

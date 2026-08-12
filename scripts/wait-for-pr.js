@@ -7,7 +7,7 @@
  */
 
 import { blue, green, red, yellow } from './functions/colors.js';
-import { runCommand } from run_command;
+import { runCommand } from './functions/run-command.js';
 
 function getPRUrl() {
   try {

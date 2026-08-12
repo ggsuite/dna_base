@@ -7,7 +7,7 @@
  */
 
 import { gray, green, red, yellow } from './functions/colors.js';
-import { runCommand } from run_command;
+import { runCommand } from './functions/run-command.js';
 
 // Check for uncommitted changes
 function hasUncommittedChanges() {
