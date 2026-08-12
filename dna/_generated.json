@@ -3,11 +3,11 @@
   "layers": [
     {
       "name": "base",
-      "package": "gg_dna",
+      "package": "helix",
       "ecosystem": null,
-      "resolvedVersion": "4.1.2",
+      "resolvedVersion": "0.0.2",
       "via": null,
-      "hash": "0xc10ccea46057d605"
+      "hash": "0x6883da335b415f9d"
     },
     {
       "name": "self",
@@ -15,14 +15,14 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x9e072e1df78443c2"
+      "hash": "0x77ef1f65d1fd4ae4"
     }
   ],
   "claude": {
     "claudeMdInclude": null
   },
-  "baseVersion": "4.1.2",
-  "baseHash": "0xc10ccea46057d605",
+  "baseVersion": "0.0.2",
+  "baseHash": "0x6883da335b415f9d",
   "hash": null,
   "instances": [
     {
@@ -104,30 +104,6 @@
     {
       "path": "doc/02-develop/develop.md",
       "hash": "0x41faee23e2e7ee3c"
-    },
-    {
-      "path": "doc/conventions/code-conventions.md",
-      "hash": "0x488d57d7867e43bc"
-    },
-    {
-      "path": "doc/conventions/documentation-conventions.md",
-      "hash": "0x87d6a90296b14167"
-    },
-    {
-      "path": "doc/conventions/test-conventions.md",
-      "hash": "0xa95cf04e89f66d63"
-    },
-    {
-      "path": "doc/guides/claude-code.md",
-      "hash": "0xe18e86905c716287"
-    },
-    {
-      "path": "doc/guides/dna.md",
-      "hash": "0x9a80623ccccb1d9c"
-    },
-    {
-      "path": "scripts/README.md",
-      "hash": "0x0072d45be9d1835b"
     },
     {
       "path": "scripts/delete-feature-branch.js",
