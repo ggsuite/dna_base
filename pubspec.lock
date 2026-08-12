@@ -132,10 +132,9 @@ packages:
   gg_dna:
     dependency: "direct dev"
     description:
-      name: gg_dna
-      sha256: "6131975f995586b2b1ff75e5365640c27e2349ef573764bb7520b80a3223b000"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../gg_dna"
+      relative: true
+    source: path
     version: "4.1.1"
   gg_hash:
     dependency: transitive
