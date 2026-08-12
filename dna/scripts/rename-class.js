@@ -5,7 +5,6 @@ import path from 'path';
 import { blue, gray, green, red, yellow } from './functions/colors.js';
 
 // .............................................................................
-const fileNameRexp = /(\.ts|\.md|\.log|\.js|\.json|\.yaml|\.yml)$/;
 const excludedFiles = ['create-new-repo.md', 'rename-class.js'];
 
 // .............................................................................
@@ -14,8 +13,19 @@ const isExcluded = (fileName) => {
   return excludedFiles.includes(fileName);
 };
 
-const shouldProcessFile = (file) =>
-  fileNameRexp.test(file) && !isExcluded(file);
+const shouldProcessFile = (file) => !isExcluded(file);
+
+// Binary files must not be rewritten as UTF-8, that would corrupt them.
+const readTextFile = (fullPath) => {
+  const buffer = fs.readFileSync(fullPath);
+  if (buffer.includes(0)) return null;
+  return buffer.toString('utf8');
+};
+
+const writeTextFile = (fullPath, oldContent, newContent) => {
+  if (newContent === oldContent) return;
+  fs.writeFileSync(fullPath, newContent, 'utf8');
+};
 
 if (process.argv.length < 4) {
   const usage = red('Usage:');
@@ -60,8 +70,9 @@ const replaceIncludesFirst = (directory) => {
       if (file.name.startsWith('.') || file.name === 'node_modules') continue;
       replaceIncludesFirst(fullPath);
     } else if (shouldProcessFile(file.name)) {
-      let content = fs.readFileSync(fullPath, 'utf8');
-      content = content
+      const original = readTextFile(fullPath);
+      if (original === null) continue;
+      const content = original
         .replace(
           new RegExp(`(\\/)${classASnake}(\\.ts)?([\\.\\/\\'\\\"\\\\])`, 'g'),
           `$1${classBSnake}$2$3`,
@@ -73,7 +84,7 @@ const replaceIncludesFirst = (directory) => {
           ),
           `$1${classBSnakeUnderscore}$2$3`,
         );
-      fs.writeFileSync(fullPath, content, 'utf8');
+      writeTextFile(fullPath, original, content);
     }
   }
 };
@@ -88,8 +99,9 @@ const replaceInFiles = (directory) => {
       if (file.name.startsWith('.') || file.name === 'node_modules') continue;
       replaceInFiles(fullPath);
     } else if (shouldProcessFile(file.name)) {
-      let content = fs.readFileSync(fullPath, 'utf8');
-      content = content
+      const original = readTextFile(fullPath);
+      if (original === null) continue;
+      const content = original
         .replace(new RegExp(classAUpper, 'g'), classBUpper)
         .replace(new RegExp(classALower, 'g'), classBLower)
         .replace(new RegExp(classASnake, 'g'), classBSnake)
@@ -97,7 +109,7 @@ const replaceInFiles = (directory) => {
           new RegExp(classASnakeUnderscore, 'g'),
           classBSnakeUnderscore,
         );
-      fs.writeFileSync(fullPath, content, 'utf8');
+      writeTextFile(fullPath, original, content);
     }
   }
 };

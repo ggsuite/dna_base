@@ -4,5 +4,6 @@
   "copyrightYear": "2026",
   "gitOrgUrl": "https://github.com/<your-org>",
   "projectName": "<your-project>",
-  "jiraPrefix": "GGS"
+  "jiraPrefix": "GGS",
+  "pubDevPublisher": "inlavigo.com"
 }
