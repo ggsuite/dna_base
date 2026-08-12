@@ -1,5 +1,5 @@
 # Changelog
 
-## Unreleased
+## [0.0.0]
 
-- Initial implementation
+- Initial implementation. Copied from base_dna
