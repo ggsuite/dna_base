@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x2da13509d5f61905"
+      "hash": "0x3d8db7e7f45c600a"
     }
   ],
   "claude": {
@@ -98,6 +98,10 @@
       "hash": "0x846766914bb56a84"
     },
     {
+      "path": "doc/02_develop/create_repo.md",
+      "hash": "0x5532e85c0ab9b0d1"
+    },
+    {
       "path": "doc/02_develop/develop.md",
       "hash": "0x41faee23e2e7ee3c"
     },
@@ -124,6 +128,58 @@
     {
       "path": "scripts/README.md",
       "hash": "0x18eb11ecbaaff8e8"
+    },
+    {
+      "path": "scripts/delete_feature_branch.js",
+      "hash": "0xb4b5ca66253e578b"
+    },
+    {
+      "path": "scripts/functions/colors.js",
+      "hash": "0x2450d0afeffc8b9b"
+    },
+    {
+      "path": "scripts/functions/current_branch.js",
+      "hash": "0xab7315a7ae39e6a4"
+    },
+    {
+      "path": "scripts/functions/directories.js",
+      "hash": "0x1ba5218f89560d8c"
+    },
+    {
+      "path": "scripts/functions/get_repo_urls.js",
+      "hash": "0x99992a8ea80fb48c"
+    },
+    {
+      "path": "scripts/functions/get_version.js",
+      "hash": "0x06e9eb19d7aab38d"
+    },
+    {
+      "path": "scripts/functions/is_clean_repo.js",
+      "hash": "0xfc3906fa4b1ed4ff"
+    },
+    {
+      "path": "scripts/functions/is_main_up_to_date.js",
+      "hash": "0xcf79ad1f9ae90bff"
+    },
+    {
+      "path": "scripts/functions/pull_request_url.js",
+      "hash": "0x12e4502484ee8615"
+    },
+    {
+      "path": "scripts/functions/run_command.js",
+      "hash": "0x10974d4e39a18659"
+    },
+    {
+      "path": "scripts/functions/sync_folders.js",
+      "hash": "0x1c268f33f343a237"
+    },
+    {
+      "path": "scripts/rename_class.js",
+      "hash": "0xa9daec4f3ea514b7"
+    },
+    {
+      "path": "scripts/wait_for_pr.js",
+      "hash": "0x6f91a509e85c1e7e"
     }
   ]
 }
