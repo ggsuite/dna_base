@@ -12,4 +12,4 @@
 /// consumers can report which DNA they inherit from.
 library;
 
-export 'src/base_dna_version.dart';
+export 'src/dna_base_version.dart';

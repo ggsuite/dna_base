@@ -1,4 +1,4 @@
-# base_dna
+# dna_base
 
 The base DNA used by many of our projects (ggsuite, rljson, tssuite,
 ds_cdm, …). It ships the ecosystem-neutral foundation every repo
@@ -18,15 +18,15 @@ inherits via [gg_dna](https://github.com/ggsuite/gg_dna):
 Declare it as a dev-dependency and initialize once:
 
 ```bash
-pnpm add -D base_dna        # TypeScript projects
-dart pub add dev:base_dna   # Dart projects
+pnpm add -D dna_base        # TypeScript projects
+dart pub add dev:dna_base   # Dart projects
 gg_dna init
 ```
 
 The placed test instantiates and verifies the DNA on every test run.
 Ecosystem layers ([dna_dart](https://github.com/ggsuite/dna_dart),
 [dna-ts](https://github.com/tssuite/dna-ts)) build on top of this
-package — consumers usually depend on those instead of base_dna
+package — consumers usually depend on those instead of dna_base
 directly.
 
 ## Development
