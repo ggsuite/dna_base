@@ -18,7 +18,7 @@ Two things are easy to confuse:
 
 A DNA package is a normal pub/npm package that ships a `dna/` folder. That
 folder is a **replica of a project root**: `dna/doc/conventions/…` lands
-at `doc/conventions/…`, `dna/.claude/skills/review/SKILL.md` lands at
+at `doc/conventions/…`, `dna/dot-claude/skills/review/SKILL.md` lands at
 `.claude/skills/review/SKILL.md`, `dna/scripts/…` lands at `scripts/…`.
 
 Dotfiles are escaped with a `dot-` prefix, because `dart pub publish`
