@@ -5,9 +5,9 @@
       "name": "base",
       "package": "gg_dna",
       "ecosystem": null,
-      "resolvedVersion": "4.1.1",
+      "resolvedVersion": "4.1.2",
       "via": null,
-      "hash": "0x5bad0ad5ab29adb6"
+      "hash": "0xc10ccea46057d605"
     },
     {
       "name": "self",
@@ -15,14 +15,14 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x2da13509d5f61905"
+      "hash": "0x9e072e1df78443c2"
     }
   ],
   "claude": {
     "claudeMdInclude": null
   },
-  "baseVersion": "4.1.1",
-  "baseHash": "0x5bad0ad5ab29adb6",
+  "baseVersion": "4.1.2",
+  "baseHash": "0xc10ccea46057d605",
   "hash": null,
   "instances": [
     {
@@ -39,7 +39,7 @@
     },
     {
       "path": ".claude/skills/review/SKILL.md",
-      "hash": "0x345dd9e198274000"
+      "hash": "0xfefedaf6c0274000"
     },
     {
       "path": ".prettierignore",
@@ -98,32 +98,88 @@
       "hash": "0x846766914bb56a84"
     },
     {
-      "path": "doc/02_develop/develop.md",
+      "path": "doc/02-develop/create-repo.md",
+      "hash": "0x03d992b120985887"
+    },
+    {
+      "path": "doc/02-develop/develop.md",
       "hash": "0x41faee23e2e7ee3c"
     },
     {
-      "path": "doc/conventions/code_conventions.md",
-      "hash": "0x6a8d57d7867e43bc"
+      "path": "doc/conventions/code-conventions.md",
+      "hash": "0x488d57d7867e43bc"
     },
     {
-      "path": "doc/conventions/documentation_conventions.md",
-      "hash": "0x6e7eccb437d966c1"
+      "path": "doc/conventions/documentation-conventions.md",
+      "hash": "0x87d6a90296b14167"
     },
     {
-      "path": "doc/conventions/test_conventions.md",
-      "hash": "0xe7ca8d4c89f66d63"
+      "path": "doc/conventions/test-conventions.md",
+      "hash": "0xa95cf04e89f66d63"
     },
     {
-      "path": "doc/guides/claude_code.md",
+      "path": "doc/guides/claude-code.md",
       "hash": "0xe18e86905c716287"
     },
     {
       "path": "doc/guides/dna.md",
-      "hash": "0x913bdd969be6e52e"
+      "hash": "0x9a80623ccccb1d9c"
     },
     {
       "path": "scripts/README.md",
-      "hash": "0x18eb11ecbaaff8e8"
+      "hash": "0x0072d45be9d1835b"
+    },
+    {
+      "path": "scripts/delete-feature-branch.js",
+      "hash": "0xb0e1a4ecaacd7466"
+    },
+    {
+      "path": "scripts/functions/colors.js",
+      "hash": "0x2450d0afeffc8b9b"
+    },
+    {
+      "path": "scripts/functions/current-branch.js",
+      "hash": "0xab7315a7ae39e6a4"
+    },
+    {
+      "path": "scripts/functions/directories.js",
+      "hash": "0x1ba5218f89560d8c"
+    },
+    {
+      "path": "scripts/functions/get-repo-urls.js",
+      "hash": "0x99992a8ea80fb48c"
+    },
+    {
+      "path": "scripts/functions/get-version.js",
+      "hash": "0x06e9eb19d7aab38d"
+    },
+    {
+      "path": "scripts/functions/is-clean-repo.js",
+      "hash": "0xfc3906fa4b1ed4ff"
+    },
+    {
+      "path": "scripts/functions/is-main-up-to-date.js",
+      "hash": "0xcf79ad1f9ae90bff"
+    },
+    {
+      "path": "scripts/functions/pull-request-url.js",
+      "hash": "0x12e4502484ee8615"
+    },
+    {
+      "path": "scripts/functions/run-command.js",
+      "hash": "0x10974d4e39a18659"
+    },
+    {
+      "path": "scripts/functions/sync-folders.js",
+      "hash": "0x1c268f33f343a237"
+    },
+    {
+      "path": "scripts/rename-class.js",
+      "hash": "0xa9daec4f3ea514b7"
+    },
+    {
+      "path": "scripts/wait-for-pr.js",
+      "hash": "0x8b422112f671ec87"
     }
   ]
 }
