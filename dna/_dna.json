@@ -1,5 +1,5 @@
 {
-  // base_dna is a DNA package: dna/ is authored by hand and is the last
+  // dna_base is a DNA package: dna/ is authored by hand and is the last
   // layer of its own instantiation. "role": "dna" is also what makes this
   // package usable as a layer at all — a dna/ folder alone does not.
   "version": 1,

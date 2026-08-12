@@ -1,12 +1,12 @@
-name: base_dna
-description: The base DNA of our projects - shared configs, docs, scripts and agent skills inherited by every repository via gg_dna.
-version: 1.1.2
-repository: https://github.com/ggsuite/base_dna.git
+name: dna_base
+description: "Shared base DNA: configs, docs, scripts and agent skills for repos"
+version: 0.0.0
+repository: https://github.com/ggsuite/dna_base.git
 
 environment:
   sdk: ">=3.11.0 <4.0.0"
 
 dev_dependencies:
-  gg_dna: ^4.1.2
+  helix: ^0.0.2
   lints: ^6.1.0
   test: ^1.31.2
