@@ -29,9 +29,8 @@
     "access": "public"
   },
   "scripts": {
-    "sync-version": "dart run scripts/sync_version.dart",
     "test:dart": "dart test",
-    "test": "pnpm run sync-version && pnpm run test:dart",
+    "test": "pnpm run test:dart",
     "prepublishOnly": "pnpm run test",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
