@@ -21,7 +21,8 @@ jedes konsumierenden Repos.
 | `init`        | DNA-bewusste `CLAUDE.md` (+ `dna/_override/PROJECT_STRUCTURE.md`) für das Repo anlegen |
 | `new-project` | Neues Paket/Repository mit `gg_create_package` anlegen           |
 | `new-ticket`  | Multi-Repo- oder Single-Repo-Ticket via `gg` anlegen             |
-| `review`      | Voller Branch-Review: erst Tooling-Checks, dann konventionsbasierter Code-Review |
+| `publish`     | Publish gemäß Publish-Guide vorbereiten; das finale `gg do publish` bleibt Menschen vorbehalten |
+| `review`      | Den Review-Guide von A bis Z ausführen: Scope, Tooling, Checkliste, Bericht, Fix-Loop |
 
 ## Anatomie eines Skills
 

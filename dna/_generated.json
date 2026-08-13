@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x52d10c9d7587a5b4"
+      "hash": "0x88d58c5b89c4e2cb"
     }
   ],
   "claude": {
@@ -57,12 +57,16 @@
       "hash": "0xad3fcff3720d05a5"
     },
     {
+      "path": ".claude/skills/publish/SKILL.md",
+      "hash": "0x445dbddf6795d5ff"
+    },
+    {
       "path": ".claude/skills/review/SKILL.md",
-      "hash": "0xfefedaf6c0274000"
+      "hash": "0x40f4b8488a74002a"
     },
     {
       "path": ".prettierignore",
-      "hash": "0x03b70ee2ea5409da"
+      "hash": "0xca9871c5856573ee"
     },
     {
       "path": ".prettierrc",
@@ -79,50 +83,6 @@
     {
       "path": "LICENSE",
       "hash": "0x58ed9cf06c6568b4"
-    },
-    {
-      "path": "doc/01-install/01-vscode.md",
-      "hash": "0xa0da6a6877bb94c2"
-    },
-    {
-      "path": "doc/01-install/02-brew-on-mac.md",
-      "hash": "0x8895bb11a57e45d9"
-    },
-    {
-      "path": "doc/01-install/03a-node-mac.md",
-      "hash": "0x29523f0d0c9f0433"
-    },
-    {
-      "path": "doc/01-install/03b-node-win.md",
-      "hash": "0x782756eb0ff83a0d"
-    },
-    {
-      "path": "doc/01-install/04-corepack.md",
-      "hash": "0xc5dcdf38d9058b2a"
-    },
-    {
-      "path": "doc/01-install/05-github-cli.md",
-      "hash": "0x71918d3cdbec7efa"
-    },
-    {
-      "path": "doc/01-install/06-flutter.md",
-      "hash": "0x1d34c33b0c659b22"
-    },
-    {
-      "path": "doc/01-install/07-gg.md",
-      "hash": "0x6297a5302a468a1b"
-    },
-    {
-      "path": "doc/01-install/08-gg-workspace.md",
-      "hash": "0x846766914bb56a84"
-    },
-    {
-      "path": "doc/02-develop/create-repo.md",
-      "hash": "0x03d992b120985887"
-    },
-    {
-      "path": "doc/02-develop/develop.md",
-      "hash": "0x90a1ee23e2e7ee3c"
     },
     {
       "path": "doc/99-guides/de/architecture-guide.md",
@@ -178,11 +138,11 @@
     },
     {
       "path": "doc/99-guides/de/review-guide.md",
-      "hash": "0x356658bd99192091"
+      "hash": "0x113580aea4fb1bc1"
     },
     {
       "path": "doc/99-guides/de/skills-guide.md",
-      "hash": "0xf45b1a34c95c35f6"
+      "hash": "0x0c98e2cb702a8741"
     },
     {
       "path": "doc/99-guides/de/test-guide.md",
@@ -246,11 +206,11 @@
     },
     {
       "path": "doc/99-guides/en/review-guide.md",
-      "hash": "0xba686baebc02c73d"
+      "hash": "0x6ab4ed783c788e38"
     },
     {
       "path": "doc/99-guides/en/skills-guide.md",
-      "hash": "0xc49de61024227afd"
+      "hash": "0x7e9e02e0c9dd617a"
     },
     {
       "path": "doc/99-guides/en/test-guide.md",
@@ -259,6 +219,58 @@
     {
       "path": "doc/99-guides/en/ui-guide.md",
       "hash": "0x00000000811c9dc5"
+    },
+    {
+      "path": "doc/guides/create-repo-guide.md",
+      "hash": "0xbfeb441aeaafd636"
+    },
+    {
+      "path": "doc/guides/develop-guide.md",
+      "hash": "0x90a1ee23e2e7ee3c"
+    },
+    {
+      "path": "doc/guides/dna-guide.md",
+      "hash": "0x6a0a0b4055abbee3"
+    },
+    {
+      "path": "doc/guides/install-guide.md",
+      "hash": "0xbec7e4ca7dfdab38"
+    },
+    {
+      "path": "doc/guides/install-guide/install-brew-on-mac-guide.md",
+      "hash": "0x8895bb11a57e45d9"
+    },
+    {
+      "path": "doc/guides/install-guide/install-corepack-guide.md",
+      "hash": "0xc5dcdf38d9058b2a"
+    },
+    {
+      "path": "doc/guides/install-guide/install-flutter-guide.md",
+      "hash": "0x1d34c33b0c659b22"
+    },
+    {
+      "path": "doc/guides/install-guide/install-gg-guide.md",
+      "hash": "0x6297a5302a468a1b"
+    },
+    {
+      "path": "doc/guides/install-guide/install-gg-workspace-guide.md",
+      "hash": "0x846766914bb56a84"
+    },
+    {
+      "path": "doc/guides/install-guide/install-github-cli-guide.md",
+      "hash": "0x71918d3cdbec7efa"
+    },
+    {
+      "path": "doc/guides/install-guide/install-node-mac-guide.md",
+      "hash": "0x29523f0d0c9f0433"
+    },
+    {
+      "path": "doc/guides/install-guide/install-node-win-guide.md",
+      "hash": "0x782756eb0ff83a0d"
+    },
+    {
+      "path": "doc/guides/install-guide/install-vscode-guide.md",
+      "hash": "0xa0da6a6877bb94c2"
     },
     {
       "path": "scripts/delete-feature-branch.js",
