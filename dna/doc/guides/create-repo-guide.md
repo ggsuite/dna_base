@@ -6,11 +6,11 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# Create a new Ggsuite repository
+# Create a new package repo
 
 ## Content <!-- omit in toc -->
 
-- [Create a new Ggsuite repository](#create-a-new-ggsuite-repository)
+- [Create a new package repo](#create-a-new-package-repo)
   - [Copy this file to tmp](#copy-this-file-to-tmp)
   - [Replace in this doc](#replace-in-this-doc)
   - [Create repo](#create-repo)
