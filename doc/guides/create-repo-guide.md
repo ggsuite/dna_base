@@ -6,11 +6,11 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# Create a new https://github.com/ggsuite repository
+# Create a new ggsuite repository
 
 ## Content <!-- omit in toc -->
 
-- [Create a new https://github.com/ggsuite repository](#create-a-new-dnagitorgurl-repository)
+- [Create a new ggsuite repository](#create-a-new-dnagitorg-repository)
   - [Copy this file to tmp](#copy-this-file-to-tmp)
   - [Replace in this doc](#replace-in-this-doc)
   - [Create repo](#create-repo)
