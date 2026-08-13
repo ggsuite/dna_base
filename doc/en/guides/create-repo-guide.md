@@ -1,6 +1,6 @@
 <!--
 @license
-Copyright (c) 2025 https://github.com/ggsuite
+Copyright (c) ggsuite
 
 Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
@@ -24,7 +24,7 @@ found in the LICENSE file in the root of this package.
   - [Push branch](#push-branch)
     - [Create and complete pull request](#create-and-complete-pull-request)
     - [Delete feature branch](#delete-feature-branch)
-  - [Publish the first time to publdev](#publish-the-first-time-to-publdev)
+  - [Publish the first time to pub.dev](#publish-the-first-time-to-pubdev)
 
 ## Copy this file to tmp
 
@@ -172,7 +172,7 @@ Open `pubspec.yaml` and add the following changes:
 
 Reset version to `0.0.0`
 
-Set description to-70 `A 60 char description of my new project`
+Set the description to `A 60-70 char description of my new project`
 
 ## Commit the initial state
 
@@ -200,7 +200,7 @@ node ./scripts/wait-for-pr.js
 node scripts/delete-feature-branch.js
 ```
 
-## Publish the first time to publdev
+## Publish the first time to pub.dev
 
 ```bash
 dart pub publish

@@ -9,11 +9,11 @@ found in the LICENSE file in the root of this package.
 # Install Flutter
 
 Flutter ships with the Dart SDK. Installing Flutter therefore also gives you
-`dart`, which is needed to install [gg](./install-gg.md).
+`dart`, which is needed to install [gg](./install-gg-guide.md).
 
 ## Install on Mac
 
-Make sure [brew is installed](./install-brew-on-mac.md)
+Make sure [brew is installed](./install-brew-on-mac-guide.md)
 
 ```bash
 brew install --cask flutter
@@ -36,8 +36,7 @@ Restart your terminal.
 
 ## Install on Linux / WSL
 
-On Windows, make sure
-[WSL and Ubuntu are installed](./install-wsl-and-ubuntu.md)
+On Windows, make sure WSL and Ubuntu are installed
 
 ```bash
 sudo apt install -y git curl unzip xz-utils zip libglu1-mesa

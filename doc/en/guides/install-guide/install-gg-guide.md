@@ -14,7 +14,7 @@ reviews and publishes across all repositories of a ticket.
 
 ## Prerequisites
 
-Install [Flutter](./install-flutter.md) first. It provides the `dart`
+Install [Flutter](./install-flutter-guide.md) first. It provides the `dart`
 command used below.
 
 ```bash
@@ -72,4 +72,4 @@ gg do -h          # everything you can act on
 gg can commit     # check before committing
 ```
 
-See also [Working with gg](../guides/gg.md).
+See also the [Develop Guide](../develop-guide.md).
