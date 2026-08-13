@@ -1,0 +1,221 @@
+<!--
+@license
+Copyright (c) dnaCopyrightHolder
+
+Use of this source code is governed by terms that can be
+found in the LICENSE file in the root of this package.
+-->
+
+# Neues dnaGitOrg-Repository anlegen
+
+## Inhalt <!-- omit in toc -->
+
+- [Neues dnaGitOrg-Repository anlegen](#neues-dnagitorg-repository-anlegen)
+  - [Diese Datei nach tmp kopieren](#diese-datei-nach-tmp-kopieren)
+  - [In diesem Dokument ersetzen](#in-diesem-dokument-ersetzen)
+  - [Repo anlegen](#repo-anlegen)
+  - [Branch-Regeln einrichten](#branch-regeln-einrichten)
+  - [Branches nach dem Merge löschen lassen](#branches-nach-dem-merge-löschen-lassen)
+  - [Neues Projekt auschecken und öffnen](#neues-projekt-auschecken-und-öffnen)
+  - [template-project in my\_new\_repo umbenennen](#template-project-in-my_new_repo-umbenennen)
+    - [Rename-Skript aufrufen](#rename-skript-aufrufen)
+  - [pubspec.yaml anpassen](#pubspecyaml-anpassen)
+  - [Initialen Stand committen](#initialen-stand-committen)
+  - [Branch pushen](#branch-pushen)
+    - [Pull Request anlegen und abschließen](#pull-request-anlegen-und-abschließen)
+    - [Feature-Branch löschen](#feature-branch-löschen)
+  - [Das erste Mal auf pub.dev veröffentlichen](#das-erste-mal-auf-pubdev-veröffentlichen)
+
+## Diese Datei nach tmp kopieren
+
+Öffne diese Datei in vscode
+
+Drücke `Cmd + Shift + S`
+
+Gehe in dein Temp-Verzeichnis, z. B. `/tmp`
+
+Speichere die Datei dort.
+
+## In diesem Dokument ersetzen
+
+In der _gesamten_ Datei:
+
+Ersetze `my_new_repo` durch den Namen deines neuen Repos
+
+Ersetze `A 60-70 char description of my new project` durch eine kurze
+Projektbeschreibung
+
+## Repo anlegen
+
+Öffne <https://github.com/dnaGitOrgUrl>
+
+Wähle `Repositories`
+
+Klicke `New repository`
+
+Trage im Feld `Repository Name` `my_new_repo` ein
+
+Füge im Feld `Description`
+`This package allows to track changes and state of git directories`
+ein
+
+Klicke auf das Dropdown `Private`. Wähle `Public`
+
+Klicke auf das Dropdown `No template`.
+
+Wähle `gg_template_project` oder `gg_template_with_cli`
+
+Klicke `Create Repository`
+
+## Branch-Regeln einrichten
+
+Öffne <https://github.com/dnaGitOrgUrl/my_new_repo>
+
+Klicke `Settings`
+
+Klicke `Branches`
+
+Suche `Branch Protection Rules`
+
+Klicke `Add branch ruleset`
+
+Trage als `Ruleset Name` `Default` ein
+
+Setze `Enforcement status` auf `Active`
+
+Suche `Branch targeting criteria`
+
+Klicke `Add target`
+
+Wähle `Include default branch`
+
+Aktiviere folgende Einstellungen:
+
+- [x] `Restrict deletions`
+- [x] `Require linear history`
+- [x] `Require a pull request before merging`
+  - Willst du ein Code-Review vor dem Merge verlangen?
+    - Nein
+      - Behalte die Default-Einstellungen
+        - Setze `Required Approvals` auf 0
+        - Hake keine der Boxen an
+    - Ja
+      - Klicke auf das Dropdown unter `Required approvals`
+        - Wähle `1` für `Required Approvals`
+        - Hake folgende Boxen an:
+          - [ ] `Dismiss stale pull request approvals when new commits are pushed`
+          - [ ] `Require review from code owners`
+          - [x] `Require approval of the most recent reviewable push`
+          - [x] `Require conversation resolution before merging`
+  - Klicke auf `Allowed merge methods:`
+    - Wähle nur `Squash`
+- [x] `Require status checks to pass`
+  - [x] `Require branches to be up to date before merging`
+  - Klicke `Add checks`
+  - Gib `Quick` ins Suchfeld ein
+  - Wähle die `Quick checks` GitHub Actions
+- [x] `Block force pushes`
+
+Klicke `Create`
+
+Authentifiziere dich, wenn du danach gefragt wirst
+
+## Branches nach dem Merge löschen lassen
+
+Öffne <https://github.com/dnaGitOrgUrl/my_new_repo>
+
+Klicke `Settings`
+
+Scrolle hinunter zu `Pull Requests`
+
+Setze folgende Einstellungen:
+
+- [ ] `Allow merge commits`
+- [x] `Allow squash merging`
+- [ ] `Allow rebase merging`
+- [x] `Always suggest updating pull request branches`
+- [x] `Allow auto-merge`
+- [x] `Automatically delete head branches`
+
+## Neues Projekt auschecken und öffnen
+
+Checke das Projekt aus
+
+```bash
+git clone git@github.com:dnaGitOrgUrl/my_new_repo.git
+cd my_new_repo
+dart pub upgrade
+```
+
+Öffne das Projekt mit vscode
+
+```bash
+code .
+```
+
+Bereite einen neuen Branch und Pull Request vor
+
+```bash
+git checkout -b rename-classes
+```
+
+## template-project in my_new_repo umbenennen
+
+### Rename-Skript aufrufen
+
+```bash
+node scripts/rename-class.js gg_template_project my_new_repo
+```
+
+## pubspec.yaml anpassen
+
+Öffne `pubspec.yaml` und nimm folgende Änderungen vor:
+
+Setze die Version auf `0.0.0` zurück
+
+Setze die Description auf `A 60-70 char description of my new project`
+
+## Initialen Stand committen
+
+```bash
+git add .
+git commit -am "Rename template-project into my_new_repo"
+```
+
+## Branch pushen
+
+Klicke in `vscode` auf der `linken Seite` auf das
+`Source Control`-Icon.
+
+### Pull Request anlegen und abschließen
+
+```bash
+git push --set-upstream origin rename-classes
+gh pr create --base main --title "Rename template-project into my_new_repo" --body " "
+gh pr merge --auto --squash
+node ./scripts/wait-for-pr.js
+```
+
+### Feature-Branch löschen
+
+```bash
+node scripts/delete-feature-branch.js
+```
+
+## Das erste Mal auf pub.dev veröffentlichen
+
+```bash
+dart pub publish
+```
+
+Öffne <https://pub.dev/packages/my_new_repo>
+
+Klicke `Admin`
+
+Klicke unter `Select a publisher` auf das `leere Dropdown`
+
+Wähle `Transfer to publisher`
+
+Wähle `dnaPubDevPublisher`
+
+Klicke im `erscheinenden Dialog` auf `ok`

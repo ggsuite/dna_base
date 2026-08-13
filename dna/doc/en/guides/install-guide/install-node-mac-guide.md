@@ -8,7 +8,7 @@ found in the LICENSE file in the root of this package.
 
 # Install Node on Mac
 
-Make sure [brew is installed](./install-brew-on-mac.md)
+Make sure [brew is installed](./install-brew-on-mac-guide.md)
 
 ## Install nvm with Homebrew
 

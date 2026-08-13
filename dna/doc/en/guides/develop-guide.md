@@ -10,9 +10,9 @@ found in the LICENSE file in the root of this package.
 
 ## Prepare
 
-[Install required software](../01-install/)
+[Install required software](./install-guide.md)
 
-[Prepare a gg workspace](../01-install/09-gg-workspace.md)
+[Prepare a gg workspace](./install-guide/install-gg-workspace-guide.md)
 
 ## Create a ticket
 

@@ -6,39 +6,40 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# DNA Guide
+# DNA-Guide
 
-## Prepare your dart project
+## Dart-Projekt vorbereiten
 
-Not a dart project? Skip this.
+Kein Dart-Projekt? Diesen Abschnitt überspringen.
 
-### Add helix, the DNA engine
+### helix, die DNA-Engine, hinzufügen
 
-Switch into your projects root folder.
+Wechsle in den Root-Ordner deines Projekts.
 
 ```bash
 cd ~/dev/<PROJECT>
 ```
 
-Add `helix`, the DNA engine as development dependency
+Füge `helix`, die DNA-Engine, als Development-Dependency hinzu
 
 ```bash
 dart pub add helix --dev
 ```
 
-### Add a DNA
+### Eine DNA hinzufügen
 
-Add a `DNA` repo, e.g. our `dna_base` as dev dependency:
+Füge ein `DNA`-Repo hinzu, z. B. unser `dna_base`, als
+Dev-Dependency:
 
 ```bash
 dart pub add dna_base --dev
 ```
 
-### Install the DNA update script
+### Das DNA-Update-Skript installieren
 
-DNA is updated on each test run.
+Die DNA wird bei jedem Testlauf aktualisiert.
 
-Create a `test/dna/dna_test.dart`:
+Lege eine `test/dna/dna_test.dart` an:
 
 ```bash
 mkdir test/dna
@@ -46,7 +47,7 @@ touch test/dna/dna_test.dart
 code test/dna/dna_test.dart
 ```
 
-Paste the following code:
+Füge folgenden Code ein:
 
 ```dart
 import 'package:helix/helix.dart';
@@ -61,35 +62,35 @@ void main() {
 }
 ```
 
-Save.
+Speichern.
 
-### Initialize the DNA
+### Die DNA initialisieren
 
-Run tests
+Tests ausführen
 
 ```bash
 dart test
 ```
 
-## Check, if DNA was installed
+## Prüfen, ob die DNA installiert wurde
 
-`dna_base` adds docs, scripts, configs etc.
-Have a look into these:
+`dna_base` fügt Doku, Skripte, Configs usw. hinzu.
+Wirf einen Blick hinein:
 
 ```bash
 cat dna/_vars.json
-cat dna/_generated_.json
+cat dna/_generated.json
 ```
 
-### Configure DNAs
+### DNAs konfigurieren
 
-Create a `_dna.json`
+Lege eine `_dna.json` an
 
 ```bash
 code dna/_dna.json
 ```
 
-Paste the following code
+Füge folgenden Code ein
 
 ```json
 {
@@ -104,21 +105,20 @@ Paste the following code
 }
 ```
 
-Save
+Speichern
 
-### Install  DNA
+### DNA installieren
 
-Run tests
+Tests ausführen
 
 ```bash
 dart test
 ```
 
-### Check generated files
+### Generierte Dateien prüfen
 
-Now the DNA files from `dna_base` are synced into your project
+Jetzt sind die DNA-Dateien aus `dna_base` in dein Projekt gesynct
 
 ```bash
-cat doc/guides/dna-guide.md
+cat doc/en/guides/dna-guide.md
 ```
-
