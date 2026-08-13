@@ -5,7 +5,7 @@
       "name": "base",
       "package": "helix",
       "ecosystem": null,
-      "resolvedVersion": "0.0.2",
+      "resolvedVersion": "0.0.4",
       "via": null,
       "hash": "0x6883da335b415f9d"
     },
@@ -15,13 +15,32 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xa9371a20ed98f9bd"
+      "hash": "0x52d10c9d7587a5b4"
     }
   ],
   "claude": {
-    "claudeMdInclude": null
+    "claudeMdInclude": [
+      "doc/99-guides/en/architecture-guide.md",
+      "doc/99-guides/en/blog-guide.md",
+      "doc/99-guides/en/cli-guide.md",
+      "doc/99-guides/en/develop-guide.md",
+      "doc/99-guides/en/dna-design-guide.md",
+      "doc/99-guides/en/doc-guide.md",
+      "doc/99-guides/en/example-guide.md",
+      "doc/99-guides/en/file-structure-guide.md",
+      "doc/99-guides/en/index-guide.md",
+      "doc/99-guides/en/multi-language-guide.md",
+      "doc/99-guides/en/project-management-guide.md",
+      "doc/99-guides/en/publish-guide.md",
+      "doc/99-guides/en/readme-guide.md",
+      "doc/99-guides/en/review-guide.md",
+      "doc/99-guides/en/skills-guide.md",
+      "doc/99-guides/en/test-guide.md",
+      "doc/99-guides/en/ui-guide.md",
+      "doc/file-structure.md"
+    ]
   },
-  "baseVersion": "0.0.2",
+  "baseVersion": "0.0.4",
   "baseHash": "0x6883da335b415f9d",
   "hash": null,
   "instances": [
@@ -62,39 +81,39 @@
       "hash": "0x58ed9cf06c6568b4"
     },
     {
-      "path": "doc/01_install/01_vscode.md",
+      "path": "doc/01-install/01-vscode.md",
       "hash": "0xa0da6a6877bb94c2"
     },
     {
-      "path": "doc/01_install/02_brew_on_mac.md",
-      "hash": "0x3ff81d12cdc6150f"
+      "path": "doc/01-install/02-brew-on-mac.md",
+      "hash": "0x8895bb11a57e45d9"
     },
     {
-      "path": "doc/01_install/03a_node_mac.md",
-      "hash": "0x4f383295e3a43359"
+      "path": "doc/01-install/03a-node-mac.md",
+      "hash": "0x29523f0d0c9f0433"
     },
     {
-      "path": "doc/01_install/03b_node_win.md",
+      "path": "doc/01-install/03b-node-win.md",
       "hash": "0x782756eb0ff83a0d"
     },
     {
-      "path": "doc/01_install/04_corepack.md",
-      "hash": "0x607522ddd35d5d36"
+      "path": "doc/01-install/04-corepack.md",
+      "hash": "0xc5dcdf38d9058b2a"
     },
     {
-      "path": "doc/01_install/05_github_cli.md",
-      "hash": "0x2a3ec36184ebcf41"
+      "path": "doc/01-install/05-github-cli.md",
+      "hash": "0x71918d3cdbec7efa"
     },
     {
-      "path": "doc/01_install/06_flutter.md",
-      "hash": "0xb295179e5d6a8cb9"
+      "path": "doc/01-install/06-flutter.md",
+      "hash": "0x1d34c33b0c659b22"
     },
     {
-      "path": "doc/01_install/07_gg.md",
-      "hash": "0x637f7197356a4128"
+      "path": "doc/01-install/07-gg.md",
+      "hash": "0x6297a5302a468a1b"
     },
     {
-      "path": "doc/01_install/08_gg_workspace.md",
+      "path": "doc/01-install/08-gg-workspace.md",
       "hash": "0x846766914bb56a84"
     },
     {
@@ -103,7 +122,143 @@
     },
     {
       "path": "doc/02-develop/develop.md",
-      "hash": "0x41faee23e2e7ee3c"
+      "hash": "0x90a1ee23e2e7ee3c"
+    },
+    {
+      "path": "doc/99-guides/de/architecture-guide.md",
+      "hash": "0x4eddce3da29f231f"
+    },
+    {
+      "path": "doc/99-guides/de/blog-guide.md",
+      "hash": "0x0f8586a3a625e952"
+    },
+    {
+      "path": "doc/99-guides/de/cli-guide.md",
+      "hash": "0x2e2b3f5051e7228c"
+    },
+    {
+      "path": "doc/99-guides/de/develop-guide.md",
+      "hash": "0x5ceb15e01491c830"
+    },
+    {
+      "path": "doc/99-guides/de/dna-design-guide.md",
+      "hash": "0xba9cc0a0ba4c741a"
+    },
+    {
+      "path": "doc/99-guides/de/doc-guide.md",
+      "hash": "0x3fc6996462226baf"
+    },
+    {
+      "path": "doc/99-guides/de/example-guide.md",
+      "hash": "0xa9015942d1f6c216"
+    },
+    {
+      "path": "doc/99-guides/de/file-structure-guide.md",
+      "hash": "0x58f38c5ae84a751e"
+    },
+    {
+      "path": "doc/99-guides/de/index-guide.md",
+      "hash": "0x0abb77f0e2bf2837"
+    },
+    {
+      "path": "doc/99-guides/de/multi-language-guide.md",
+      "hash": "0x7e50463e5a990db6"
+    },
+    {
+      "path": "doc/99-guides/de/project-management-guide.md",
+      "hash": "0x842e432ddb9bc872"
+    },
+    {
+      "path": "doc/99-guides/de/publish-guide.md",
+      "hash": "0xf281a16244b07be4"
+    },
+    {
+      "path": "doc/99-guides/de/readme-guide.md",
+      "hash": "0x77849d3634558940"
+    },
+    {
+      "path": "doc/99-guides/de/review-guide.md",
+      "hash": "0x356658bd99192091"
+    },
+    {
+      "path": "doc/99-guides/de/skills-guide.md",
+      "hash": "0xf45b1a34c95c35f6"
+    },
+    {
+      "path": "doc/99-guides/de/test-guide.md",
+      "hash": "0x517419ba8d60dc78"
+    },
+    {
+      "path": "doc/99-guides/de/ui-guide.md",
+      "hash": "0x00000000811c9dc5"
+    },
+    {
+      "path": "doc/99-guides/en/architecture-guide.md",
+      "hash": "0x12f69acd87a6af9b"
+    },
+    {
+      "path": "doc/99-guides/en/blog-guide.md",
+      "hash": "0xea741bf2233648f4"
+    },
+    {
+      "path": "doc/99-guides/en/cli-guide.md",
+      "hash": "0x4991b03dc371db97"
+    },
+    {
+      "path": "doc/99-guides/en/develop-guide.md",
+      "hash": "0xc73a340c17ca7d5e"
+    },
+    {
+      "path": "doc/99-guides/en/dna-design-guide.md",
+      "hash": "0xad432c8787ffadaa"
+    },
+    {
+      "path": "doc/99-guides/en/doc-guide.md",
+      "hash": "0x367525e103510e21"
+    },
+    {
+      "path": "doc/99-guides/en/example-guide.md",
+      "hash": "0x4fcaa1b761563547"
+    },
+    {
+      "path": "doc/99-guides/en/file-structure-guide.md",
+      "hash": "0x54da0b5694b54883"
+    },
+    {
+      "path": "doc/99-guides/en/index-guide.md",
+      "hash": "0x0c116f4413019186"
+    },
+    {
+      "path": "doc/99-guides/en/multi-language-guide.md",
+      "hash": "0xd3255ff91d8572d6"
+    },
+    {
+      "path": "doc/99-guides/en/project-management-guide.md",
+      "hash": "0x36e63df63ed840ee"
+    },
+    {
+      "path": "doc/99-guides/en/publish-guide.md",
+      "hash": "0xadc773d6c2f83ede"
+    },
+    {
+      "path": "doc/99-guides/en/readme-guide.md",
+      "hash": "0xf76f730aeeeabc57"
+    },
+    {
+      "path": "doc/99-guides/en/review-guide.md",
+      "hash": "0xba686baebc02c73d"
+    },
+    {
+      "path": "doc/99-guides/en/skills-guide.md",
+      "hash": "0xc49de61024227afd"
+    },
+    {
+      "path": "doc/99-guides/en/test-guide.md",
+      "hash": "0xe29261363fb322cc"
+    },
+    {
+      "path": "doc/99-guides/en/ui-guide.md",
+      "hash": "0x00000000811c9dc5"
     },
     {
       "path": "scripts/delete-feature-branch.js",

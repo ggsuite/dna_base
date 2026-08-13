@@ -13,7 +13,7 @@ watch pull requests.
 
 ## Install on Mac
 
-Make sure [brew is installed](./install-brew-on-mac.md)
+Make sure [brew is installed](./02-brew-on-mac.md)
 
 ```bash
 brew install gh

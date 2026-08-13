@@ -9,8 +9,8 @@ found in the LICENSE file in the root of this package.
 # Install Brew on Mac
 
 [Homebrew](https://brew.sh) is the package manager used to install most of the
-other tools on Mac, e.g. [Node](./install-node-mac.md) and
-[Flutter](./install-flutter.md).
+other tools on Mac, e.g. [Node](./03a-node-mac.md) and
+[Flutter](./06-flutter.md).
 
 ## Install Xcode command line tools
 

@@ -9,11 +9,11 @@ found in the LICENSE file in the root of this package.
 # Install Flutter
 
 Flutter ships with the Dart SDK. Installing Flutter therefore also gives you
-`dart`, which is needed to install [gg](./install-gg.md).
+`dart`, which is needed to install [gg](./07-gg.md).
 
 ## Install on Mac
 
-Make sure [brew is installed](./install-brew-on-mac.md)
+Make sure [brew is installed](./02-brew-on-mac.md)
 
 ```bash
 brew install --cask flutter
