@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xdcd0c5737e582287"
+      "hash": "0xbc7496b17879de9d"
     }
   ],
   "claude": {
@@ -63,7 +63,7 @@
     },
     {
       "path": "doc/guides/create-repo-guide.md",
-      "hash": "0x3ade71455d876419"
+      "hash": "0x0926b4a01615a1e7"
     },
     {
       "path": "doc/guides/develop-guide.md",
