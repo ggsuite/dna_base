@@ -39,7 +39,7 @@ lib/
 test/
   foo_test.dart       # mirrors lib/src/foo.dart
 doc/
-  blog/               # blog posts, one folder per year
+  blog/               # blog posts, per language (en/de) and year
   file-structure.md   # this file
 example/
   <pkg>_example.dart  # runnable usage example

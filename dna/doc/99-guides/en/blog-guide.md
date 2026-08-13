@@ -14,13 +14,18 @@ companion to commits and changelog entries.
 
 ## Location and naming
 
-Blog posts live under `doc/blog/`, grouped by year, one file per post:
+Blog posts live under `doc/blog/`, per language and year, one file per
+post:
 
 ```text
-doc/blog/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
+doc/blog/en/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
+doc/blog/de/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
 ```
 
-Example: `doc/blog/2026/2026-08-12-distribute-dna-via-npm.md`
+Example: `doc/blog/en/2026/2026-08-12-distribute-dna-via-npm.md`
+
+Every post exists in both languages with the same file name — see the
+[Multi-Language Guide](./multi-language-guide.md).
 
 ## Length
 

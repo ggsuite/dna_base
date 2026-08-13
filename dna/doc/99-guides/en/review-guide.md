@@ -30,11 +30,12 @@ Deterministic checks come first — a review of code that does not even
 pass the tooling wastes everyone's time:
 
 1. `dart pub upgrade --tighten` — dependency constraints up to date?
-2. `gg_dna sync --check` and `gg_dna apply-conventions --check` — DNA
-   and conventions up to date?
-3. `gg one can commit` — analyze, format, tests and **100 % coverage**
+2. `gg one can commit` — analyze, format, tests and **100 % coverage**
    in one side-effect-free check (gg 16+; the former
-   `gg one check …` commands no longer exist)
+   `gg one check …` commands no longer exist). The tests include the
+   placed DNA test, which instantiates and verifies the DNA — a
+   separate sync command does not exist (see the
+   [DNA Design Guide](./dna-design-guide.md)).
 
 Tooling truth beats reviewer taste: what the analyzer or the tests say
 is a fact; subjective points are suggestions.

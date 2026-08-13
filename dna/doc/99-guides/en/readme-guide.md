@@ -104,3 +104,6 @@ void main() async {
   without a README update is a review finding.
 - The "Open Bugs" list is maintenance-critical: a fixed bug leaves the
   list in the same commit that fixes it.
+- The README exists in English (`README.md`) and German
+  (`README.de.md`) — both are updated in the same change; see the
+  [Multi-Language Guide](./multi-language-guide.md).

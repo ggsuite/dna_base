@@ -113,18 +113,13 @@ while programming. See the
 The `CLAUDE.md` in the repo root is loaded automatically by Claude
 Code. It contains:
 
-- **`@` imports of the convention documents**, kept inside a marker
-  block that is maintained automatically by `apply-conventions`:
-
-  ```markdown
-  <!-- gg_dna:conventions:start v=YYYY-MM-DD -->
-  @.gg/claude/code-conventions.md
-  @.gg/claude/test-conventions.md
-  @.gg/claude/documentation-conventions.md
-  <!-- gg_dna:conventions:end -->
-  ```
-
-- **Repo-specific notes** outside the marker block: architecture
+- **The managed block**, maintained by Helix between
+  `<!-- helix:claude_md:start -->` and `<!-- helix:claude_md:end -->`:
+  one `@`-import line per file listed in `claude.claudeMdInclude` of
+  `dna/_dna.json` (folders expand to their `.md` files). Listing
+  `doc/99-guides/en` makes all guides mandatory reading at every
+  session start — see the [DNA Design Guide](./dna-design-guide.md).
+- **Repo-specific notes** outside the managed block: architecture
   sketch, domain terms, project-specific workflows.
 
 Not in CLAUDE.md: onboarding prose, marketing, anything that belongs

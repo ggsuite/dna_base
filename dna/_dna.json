@@ -5,6 +5,12 @@
   "version": 1,
   "role": "dna",
 
-  // The root of the tree: everything below gg_dna's own base DNA.
-  "layers": []
+  // The root of the tree: no parent DNAs.
+  "layers": [],
+
+  // Imported into CLAUDE.md's managed block — every guide plus the
+  // project structure is mandatory reading for Claude at session start.
+  "claude": {
+    "claudeMdInclude": ["doc/99-guides/en", "doc/file-structure.md"]
+  }
 }

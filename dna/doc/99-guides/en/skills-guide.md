@@ -72,15 +72,14 @@ Extracted from the shipped skills — follow them in new ones:
 - **State the hard "never" rules** in a final "Important" section:
   never push unasked, never publish, never invent content.
 
-## Skill vs. convention vs. guide
+## Skill vs. guide
 
-- **Conventions** (`.claude/conventions/`, via `apply-conventions`)
-  describe how code, tests, docs and commits must look — they are
-  always loaded.
+- **Guides** (`doc/99-guides/`) define how to work in the repo. They
+  are imported through the managed CLAUDE.md block, so they are
+  always loaded — see the
+  [DNA Design Guide](./dna-design-guide.md).
 - **Skills** describe how to execute a concrete workflow step by step
   — they load on demand.
-- **Guides** (`doc/99-guides/`) are the human-readable documentation
-  both of them are derived from.
 
-When the three overlap, keep them consistent: a workflow change lands
-in the guide first, then in the convention/skill that automates it.
+When the two overlap, keep them consistent: a workflow change lands
+in the guide first, then in the skill that automates it.
