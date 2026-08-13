@@ -20,7 +20,8 @@ which is instantiated into `.claude/skills/` of every consuming repo.
 | `init`        | Create a DNA-aware `CLAUDE.md` (+ `dna/_override/PROJECT_STRUCTURE.md`) for the repo |
 | `new-project` | Create a new package/repository with `gg_create_package`       |
 | `new-ticket`  | Create a multi-repo or single-repo ticket via `gg`             |
-| `review`      | Full branch review: tooling checks first, then convention-based code review |
+| `publish`     | Prepare a publish per the publish guide; the final `gg do publish` stays human-triggered |
+| `review`      | Execute the review guide end to end: scope, tooling, checklist, report, fix loop |
 
 ## Anatomy of a skill
 
