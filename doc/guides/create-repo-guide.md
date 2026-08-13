@@ -40,7 +40,7 @@ Save the file there.
 
 In the _whole_ file:
 
-Replace `my_new_repo` by the name of your new repo
+Replace `my_new_repo2` by the name of your new repo
 
 Replace `A 60-70 char description of my new project` by a short project description
 
