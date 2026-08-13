@@ -17,7 +17,7 @@ found in the LICENSE file in the root of this package.
   - [Setup branch rules](#setup-branch-rules)
   - [Require deleting branches after merge](#require-deleting-branches-after-merge)
   - [Checkout and open the new project](#checkout-and-open-the-new-project)
-  - [Rename template-project into gg\_dir\_state](#rename-template-project-into-gg_dir_state)
+  - [Rename template-project into my\_new\_repo](#rename-template-project-into-my_new_repo)
     - [Call rename script](#call-rename-script)
   - [Edit pubspec.yaml](#edit-pubspecyaml)
   - [Commit the initial state](#commit-the-initial-state)
@@ -40,9 +40,9 @@ Save the file there.
 
 In the _whole_ file:
 
-Replace `gg_dir_state` by the name of your new repo
+Replace `my_new_repo` by the name of your new repo
 
-Replace `This package allows to track changes and state of git directories` by a short project description
+Replace `A 60-70 char description of my new project` by a short project description
 
 ## Create repo
 
@@ -52,21 +52,23 @@ Select `Repositories`
 
 Click `New repository`
 
-In the field `Repository Name`, enter `gg_dir_state`
+In the field `Repository Name`, enter `my_new_repo`
 
-Into the `Description` field, paste `This package allows to track changes and
-state of git directories`
+Into the `Description` field, paste
+`This package allows to track changes and state of git directories`
 
 Click the dropdown `Private`. Select `Public`
 
-Click the dropdown `No template`. Select `gg_template_project`
+Click the dropdown `No template`.
+
+Select `gg_template_project` or `gg_template_with_cli`
 
 Click `Create Repository`
 
 
 ## Setup branch rules
 
-Open <https://github.com/https://github.com/ggsuite/gg_dir_state>
+Open <https://github.com/https://github.com/ggsuite/my_new_repo>
 
 Click `Settings`
 
@@ -119,7 +121,7 @@ When asked, Authenticate
 
 ## Require deleting branches after merge
 
-Open <https://github.com/https://github.com/ggsuite/gg_dir_state>
+Open <https://github.com/https://github.com/ggsuite/my_new_repo>
 
 Click `Settings`
 
@@ -132,15 +134,15 @@ Apply the following settings:
 - [ ] `Allow rebase merging`
 - [x] `Always suggest updating pull request branches`
 - [x] `Allow auto-merge`
-- [x] `Automatically delete head bra  nches`
+- [x] `Automatically delete head branches`
 
 ## Checkout and open the new project
 
 Checkout the project
 
 ```bash
-git clone git@github.com:https://github.com/ggsuite/gg_dir_state.git
-cd gg_dir_state
+git clone git@github.com:https://github.com/ggsuite/my_new_repo.git
+cd my_new_repo
 dart pub upgrade
 ```
 
@@ -156,12 +158,12 @@ Prepare a new branch and pull request
 git checkout -b rename-classes
 ```
 
-## Rename template-project into gg_dir_state
+## Rename template-project into my_new_repo
 
 ### Call rename script
 
 ```bash
-node scripts/rename-class.js gg_template_project gg_dir_state
+node scripts/rename-class.js gg_template_project my_new_repo
 ```
 
 ## Edit pubspec.yaml
@@ -170,13 +172,13 @@ Open `pubspec.yaml` and add the following changes:
 
 Reset version to `0.0.0`
 
-Set description to `This package allows to track changes and state of git directories`
+Set description to-70 `A 60 char description of my new project`
 
 ## Commit the initial state
 
 ```bash
 git add .
-git commit -am "Rename template-project into gg_dir_state"
+git commit -am "Rename template-project into my_new_repo"
 ```
 
 ## Push branch
@@ -187,7 +189,7 @@ In `vscode` at the `left side`, click `Source Control` icon.
 
 ```bash
 git push --set-upstream origin rename-classes
-gh pr create --base main --title "Rename template-project into gg_dir_state" --body " "
+gh pr create --base main --title "Rename template-project into my_new_repo" --body " "
 gh pr merge --auto --squash
 node ./scripts/wait-for-pr.js
 ```
@@ -204,7 +206,7 @@ node scripts/delete-feature-branch.js
 dart pub publish
 ```
 
-Open <https://pub.dev/packages/gg_dir_state>
+Open <https://pub.dev/packages/my_new_repo>
 
 Click `Admin`
 
