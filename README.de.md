@@ -3,26 +3,27 @@
 Die Basis-DNA, die von vielen unserer Projekte verwendet wird
 (ggsuite, rljson, tssuite, ds_cdm, …). Sie liefert das
 ökosystem-neutrale Fundament, das jedes Repo über
-[gg_dna](https://github.com/ggsuite/gg_dna) erbt:
+[helix](https://github.com/ggsuite/helix) erbt:
 
-- `dna/.vscode/` — gemeinsame Editor-Einstellungen und
+- `dna/dot-vscode/` — gemeinsame Editor-Einstellungen und
   Extension-Empfehlungen
 - `dna/LICENSE` — das MIT-Lizenz-Template (Variablen
   `dnaCopyrightHolder`, `dnaCopyrightYear`)
-- `dna/doc/` — die kanonischen Entwickler-Guides (Ticket-Workflow
-  `develop.md`, Install-Guides, Org-Guides)
+- `dna/doc/` — die kanonischen Entwickler-Guides auf Englisch und
+  Deutsch (`doc/en/guides/`, `doc/de/guides/`: Develop-Guide,
+  Install-Guides, …)
 - `dna/scripts/` — Node-Skripte für die Repo-Verwaltung
-- `dna/_vars.json` — die Basis-Variablen-Defaults (`company`,
-  `copyrightHolder`, `gitOrgUrl`, `projectName`, …)
+- `dna/_vars.json` — die Basis-Variablen-Defaults (`dnaCompany`,
+  `dnaCopyrightHolder`, `dnaGitOrgUrl`, `dnaProjectName`, …)
 
 ## Verwendung
 
 Als Dev-Dependency deklarieren und einmalig initialisieren:
 
 ```bash
-pnpm add -D dna_base        # TypeScript projects
-dart pub add dev:dna_base   # Dart projects
-gg_dna init
+pnpm add -D @tssuite/dna-base   # TypeScript projects
+dart pub add dev:dna_base       # Dart projects
+helix init
 ```
 
 Der platzierte Test instanziiert und verifiziert die DNA bei jedem
@@ -34,7 +35,7 @@ dna_base.
 
 ## Entwicklung
 
-Dieses Repo hat `role: "dna"` in `.gg/dna.json`: Der `dna/`-Ordner
+Dieses Repo hat `role: "dna"` in `dna/_dna.json`: Der `dna/`-Ordner
 wird von Hand gepflegt, nie generiert. Das Repo instanziiert seine
 eigene DNA — nach Änderungen `dart test` ausführen; vorher committen
 (eine Datei, die die DNA überschreiben würde, darf keine
