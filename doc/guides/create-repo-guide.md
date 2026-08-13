@@ -1,28 +1,30 @@
 <!--
 @license
-Copyright (c) 2025 Ggsuite
+Copyright (c) 2025 https://github.com/ggsuite
 
 Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# Create a new package repo
+# Create a new https://github.com/ggsuite repository
 
 ## Content <!-- omit in toc -->
 
-- [Create a new package repo](#create-a-new-package-repo)
+- [Create a new https://github.com/ggsuite repository](#create-a-new-dnagitorgurl-repository)
   - [Copy this file to tmp](#copy-this-file-to-tmp)
   - [Replace in this doc](#replace-in-this-doc)
   - [Create repo](#create-repo)
   - [Setup branch rules](#setup-branch-rules)
   - [Require deleting branches after merge](#require-deleting-branches-after-merge)
   - [Checkout and open the new project](#checkout-and-open-the-new-project)
-  - [Rename template-project into my-new-repo](#rename-template-project-into-my-new-repo)
+  - [Rename template-project into gg\_dir\_state](#rename-template-project-into-gg_dir_state)
     - [Call rename script](#call-rename-script)
-  - [Edit package.json](#edit-packagejson)
+  - [Edit pubspec.yaml](#edit-pubspecyaml)
   - [Commit the initial state](#commit-the-initial-state)
+  - [Push branch](#push-branch)
     - [Create and complete pull request](#create-and-complete-pull-request)
     - [Delete feature branch](#delete-feature-branch)
+  - [Publish the first time to publdev](#publish-the-first-time-to-publdev)
 
 ## Copy this file to tmp
 
@@ -38,31 +40,33 @@ Save the file there.
 
 In the _whole_ file:
 
-Replace `my-new-repo` by the name of your new repo
+Replace `gg_dir_state` by the name of your new repo
 
-Replace `Rljson template-project description` by a short project description
+Replace `This package allows to track changes and state of git directories` by a short project description
 
 ## Create repo
 
-Open <https://github.com/rljson>
+Open <https://github.com/https://github.com/ggsuite>
 
 Select `Repositories`
 
 Click `New repository`
 
-Below `Repository template` click on the drop down `No template`
+In the field `Repository Name`, enter `gg_dir_state`
 
-Select the template repository `@rljson/template-project`
+Into the `Description` field, paste `This package allows to track changes and
+state of git directories`
 
-Enter a `my-new-repo` as `name`
+Click the dropdown `Private`. Select `Public`
 
-Into the `Title` field, paste `Rljson template-project description`
+Click the dropdown `No template`. Select `gg_template_project`
 
-Create the repo as used
+Click `Create Repository`
+
 
 ## Setup branch rules
 
-Open <https://github.com/rljson/my-new-repo>
+Open <https://github.com/https://github.com/ggsuite/gg_dir_state>
 
 Click `Settings`
 
@@ -105,8 +109,8 @@ Check the following settings:
 - [x] `Require status checks to pass`
   - [x] `Require branches to be up to date before merging`
   - Click `Add checks`
-  - Enter `Build` into the search field
-  - Select `Build and Test` GitHub Actions
+  - Enter `Quick` into the search field
+  - Select `Quick checks` GitHub Actions
 - [x] `Block force pushes`
 
 Click `Create`
@@ -115,7 +119,7 @@ When asked, Authenticate
 
 ## Require deleting branches after merge
 
-Open <https://github.com/rljson/my-new-repo>
+Open <https://github.com/https://github.com/ggsuite/gg_dir_state>
 
 Click `Settings`
 
@@ -128,17 +132,16 @@ Apply the following settings:
 - [ ] `Allow rebase merging`
 - [x] `Always suggest updating pull request branches`
 - [x] `Allow auto-merge`
-- [x] `Automatically delete head branches`
+- [x] `Automatically delete head bra  nches`
 
 ## Checkout and open the new project
 
 Checkout the project
 
 ```bash
-git clone git@github.com:rljson/my-new-repo.git
-cd my-new-repo
-pnpm install
-pnpm build
+git clone git@github.com:https://github.com/ggsuite/gg_dir_state.git
+cd gg_dir_state
+dart pub upgrade
 ```
 
 Open project with vscode
@@ -153,34 +156,38 @@ Prepare a new branch and pull request
 git checkout -b rename-classes
 ```
 
-## Rename template-project into my-new-repo
+## Rename template-project into gg_dir_state
 
 ### Call rename script
 
 ```bash
-node scripts/rename-class.js template-project my-new-repo
+node scripts/rename-class.js gg_template_project gg_dir_state
 ```
 
-## Edit package.json
+## Edit pubspec.yaml
 
-Open `package.json` and add the following changes:
+Open `pubspec.yaml` and add the following changes:
 
-Reset version to `0.0.1`
+Reset version to `0.0.0`
 
-Set description to `Rljson template-project description`
+Set description to `This package allows to track changes and state of git directories`
 
 ## Commit the initial state
 
 ```bash
 git add .
-git commit -am "Rename template-project into my-new-repo"
+git commit -am "Rename template-project into gg_dir_state"
 ```
+
+## Push branch
+
+In `vscode` at the `left side`, click `Source Control` icon.
 
 ### Create and complete pull request
 
 ```bash
-node scripts/push-branch.js
-gh pr create --base main --title "Rename template-project into my-new-repo" --body " "
+git push --set-upstream origin rename-classes
+gh pr create --base main --title "Rename template-project into gg_dir_state" --body " "
 gh pr merge --auto --squash
 node ./scripts/wait-for-pr.js
 ```
@@ -190,3 +197,22 @@ node ./scripts/wait-for-pr.js
 ```bash
 node scripts/delete-feature-branch.js
 ```
+
+## Publish the first time to publdev
+
+```bash
+dart pub publish
+```
+
+Open <https://pub.dev/packages/gg_dir_state>
+
+Click `Admin`
+
+Below `Select a publisher`, click on the `empty dropdown`
+
+Select `Transfer to publisher`
+
+Select `inlavigo.com`
+
+On the `appearing dialog`, click `ok`
+
