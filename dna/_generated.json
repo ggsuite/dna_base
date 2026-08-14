@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x04ba19b890d9bcfe"
+      "hash": "0xd1cb7a091eaf3ac3"
     }
   ],
   "claude": {
@@ -74,8 +74,12 @@
       "hash": "0x01940bc72c15a292"
     },
     {
+      "path": "doc/de/guides/develop-guide.md",
+      "hash": "0xbb6624ae8c7b9cf2"
+    },
+    {
       "path": "doc/de/guides/develop-with-ai-guide.md",
-      "hash": "0x9c97aab52997f494"
+      "hash": "0x2c1f8bd337098cf5"
     },
     {
       "path": "doc/de/guides/develop-without-ai-guide.md",
@@ -87,7 +91,7 @@
     },
     {
       "path": "doc/de/guides/dna-guides-guide.md",
-      "hash": "0xed80028f57833092"
+      "hash": "0xf0f1366958a9cfba"
     },
     {
       "path": "doc/de/guides/index-guide.md",
@@ -143,11 +147,19 @@
     },
     {
       "path": "doc/de/guides/review-guide.md",
-      "hash": "0x1320182c2014f364"
+      "hash": "0x1b77086657973807"
+    },
+    {
+      "path": "doc/de/guides/review-heavy-guide.md",
+      "hash": "0xf0ca54617ef5b54f"
     },
     {
       "path": "doc/en/guides/blog-guide.md",
       "hash": "0xca395ddba673dc06"
+    },
+    {
+      "path": "doc/en/guides/claude-dev-instructions-guide.md",
+      "hash": "0x8053039ec27b60c9"
     },
     {
       "path": "doc/en/guides/clean-code-guide.md",
@@ -162,8 +174,20 @@
       "hash": "0x79fdda1d8a80fee5"
     },
     {
+      "path": "doc/en/guides/develop-with-ai-guide.md",
+      "hash": "0x925f71b65d7b44d5"
+    },
+    {
+      "path": "doc/en/guides/develop-without-ai-guide.md",
+      "hash": "0x8053039ec27b60c9"
+    },
+    {
       "path": "doc/en/guides/dna-guide.md",
       "hash": "0x1a96c3a353598d32"
+    },
+    {
+      "path": "doc/en/guides/dna-guides-guide.md",
+      "hash": "0x463551f05deabed6"
     },
     {
       "path": "doc/en/guides/index-guide.md",
@@ -216,6 +240,10 @@
     {
       "path": "doc/en/guides/readme-guide.md",
       "hash": "0x6638d113d811af84"
+    },
+    {
+      "path": "doc/en/guides/review-guide.md",
+      "hash": "0x018bf8ff3d16530d"
     },
     {
       "path": "doc/en/guides/review-heavy-guide.md",

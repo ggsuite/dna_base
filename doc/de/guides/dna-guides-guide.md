@@ -1,3 +1,11 @@
+<!--
+@license
+Copyright (c) ggsuite
+
+Use of this source code is governed by terms that can be
+found in the LICENSE file in the root of this package.
+-->
+
 # DNA-Guides-Guide
 
 - Erstelle für einen neuen Guide eine .md-Datei in dna/doc/de|en/guides
