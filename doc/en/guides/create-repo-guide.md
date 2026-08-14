@@ -64,7 +64,6 @@ Select `gg_template_project` or `gg_template_with_cli`
 
 Click `Create Repository`
 
-
 ## Setup branch rules
 
 Execute the following script to setup the branch rules shown below:
@@ -72,6 +71,7 @@ Execute the following script to setup the branch rules shown below:
 ```bash
 node scripts/setup-github-repo.js
 ```
+
 Want to make up the changes manually? Dho this:
 
 Open <https://github.com/https://github.com/ggsuite/my_new_repo>
@@ -223,4 +223,3 @@ Select `Transfer to publisher`
 Select `inlavigo.com`
 
 On the `appearing dialog`, click `ok`
-

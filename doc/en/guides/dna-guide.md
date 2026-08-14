@@ -106,7 +106,7 @@ Paste the following code
 
 Save
 
-### Install  DNA
+### Install DNA
 
 Run tests
 
@@ -121,4 +121,3 @@ Now the DNA files from `dna_base` are synced into your project
 ```bash
 cat doc/en/guides/dna-guide.md
 ```
-

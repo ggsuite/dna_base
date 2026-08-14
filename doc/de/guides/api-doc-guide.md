@@ -70,5 +70,5 @@ class GgValue<T> {
 
 - Trivialitäten: Ein Getter `length` braucht keine Erklärung — wenn
   der Lint einen Doc-Comment verlangt, reicht die schlichte Variante.
-- Wie der Code es tut — Doc-Comments erklären *was* und *warum*.
+- Wie der Code es tut — Doc-Comments erklären _was_ und _warum_.
 - Persönliche Notizen, "vielleicht später"-Pläne, FIXMEs.

@@ -1,1 +1,4 @@
-{"issue_id":"add-doc-guides","description":"Add blog, api-doc, index, multi-language and readme guides as first guide subset"}
+{
+  "issue_id": "add-doc-guides",
+  "description": "Add blog, api-doc, index, multi-language and readme guides as first guide subset"
+}

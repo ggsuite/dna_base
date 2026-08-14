@@ -68,5 +68,5 @@ class GgValue<T> {
 
 - Trivialities: a getter `length` needs no explanation — if the lint
   requires a doc comment, the plain variant is enough.
-- How the code does it — doc comments explain *what* and *why*.
+- How the code does it — doc comments explain _what_ and _why_.
 - Personal notes, "maybe later" plans, FIXMEs.
