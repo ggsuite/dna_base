@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x193eea7c4eee9bfc"
+      "hash": "0xec629dda076edc93"
     }
   ],
   "claude": {
@@ -25,22 +25,6 @@
   "baseHash": "0x6883da335b415f9d",
   "hash": null,
   "instances": [
-    {
-      "path": ".claude/skills/init/SKILL.md",
-      "hash": "0x0e505fab50995a94"
-    },
-    {
-      "path": ".claude/skills/new-project/SKILL.md",
-      "hash": "0xf863e80c14b5e980"
-    },
-    {
-      "path": ".claude/skills/new-ticket/SKILL.md",
-      "hash": "0xad3fcff3720d05a5"
-    },
-    {
-      "path": ".claude/skills/review/SKILL.md",
-      "hash": "0x4241d65b6c8fe04c"
-    },
     {
       "path": ".github/workflows/quick_check.yaml",
       "hash": "0xa61b5062f48e430c"
@@ -67,7 +51,7 @@
     },
     {
       "path": "doc/de/guides/api-doc-guide.md",
-      "hash": "0x03ea424774da8665"
+      "hash": "0xc5cf5960284c7f78"
     },
     {
       "path": "doc/de/guides/blog-guide.md",
@@ -147,7 +131,7 @@
     },
     {
       "path": "doc/en/guides/create-repo-guide.md",
-      "hash": "0xe06e5504a9fff5e7"
+      "hash": "0x0c8f0207ce08f5ba"
     },
     {
       "path": "doc/en/guides/develop-guide.md",

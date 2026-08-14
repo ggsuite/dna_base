@@ -6,11 +6,13 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# API-Doc-Guide
+# API Dokumentations Guide
 
-Wie ggsuite-Projekte dokumentiert werden. Dokumentation ist
-funktional, nicht "schön": API-Verständnis, Reproduzierbarkeit,
-Nachvollziehbarkeit.
+## Regeln
+
+- Dokumentiere APIS nach Möglichkeit mit einer Zeile
+- Fasse das Wichtigste der Funktion zusammen
+- Dokumentiere einfach und verständlich
 
 ## Dateiaufbau
 
