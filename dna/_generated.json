@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x1492d5c9de13de34"
+      "hash": "0x3d260003e4335d93"
     }
   ],
   "claude": {
@@ -51,7 +51,7 @@
     },
     {
       "path": "doc/de/guides/blog-guide.md",
-      "hash": "0x968a1d5fe250adf7"
+      "hash": "0x61939b3318bdb3c9"
     },
     {
       "path": "doc/de/guides/clean-code-guide.md",
@@ -194,11 +194,11 @@
       "hash": "0x6638d113d811af84"
     },
     {
-      "path": "doc/templates/blog/de/template.md",
+      "path": "doc/templates/blog-template-de.md",
       "hash": "0x4f48f2db12a5ca19"
     },
     {
-      "path": "doc/templates/blog/en/template.md",
+      "path": "doc/templates/blog-template-en.md",
       "hash": "0x72f96f22e4ee4851"
     },
     {

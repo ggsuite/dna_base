@@ -17,7 +17,8 @@ found in the LICENSE file in the root of this package.
 ## Kopiere das Template
 
 - Lege einen Jahresordner in `blog/de/2026` an, sofern nicht vorhanden
-- Denke dir einen zusammenfassenden Titel für das Ticket aus
+- Denke dir einen zusammenfassenden Titel in Englisch für das Ticket aus
+-
 - Kopiere `doc/templates/blog-template-de.md` nach `<yyyy>-<mm>-<dd>-titel-kebab-case`
 
 ## Übersetze den Blog Post
