@@ -34,9 +34,9 @@ cd tickets/dnaJiraPrefix-145
 
 ## CLAUDE: Füge Git-Repositories hinzu
 
-Mache einen Plan wie du das Ticket grob umsetzen möchtest.
 Schau dir die index.md eines jeden Repos in .ocean an und entscheide welche
 Repos dem Ticket hinzugefügt werden müssen.
+Mache einen Plan wie du das Ticket grob umsetzen möchtest.
 Falls gewisse Dinge bei der Umsetzung zu einer noch nicht vorhandenen Domain
 im .ocean-ordner gehören, ziehe in Betracht ein neues Repository anzulegen.
 Frage den Nutzer dazu. Erkläre dem Nutzer auch was du in welchem Repo grob

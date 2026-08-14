@@ -34,9 +34,9 @@ cd tickets/dnaJiraPrefix-145
 
 ## CLAUDE: Add git repositories
 
-Make a plan for how you roughly want to implement the ticket.
 Look at the index.md of each repo in .ocean and decide which repos
 need to be added to the ticket.
+Make a plan for how you roughly want to implement the ticket.
 If certain parts of the implementation belong to a domain that does not
 yet exist in the .ocean folder, consider creating a new repository.
 Ask the user about this. Also explain to the user what you roughly want
