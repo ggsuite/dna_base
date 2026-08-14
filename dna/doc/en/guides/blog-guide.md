@@ -8,56 +8,32 @@ found in the LICENSE file in the root of this package.
 
 # Blog Guide
 
-How to write blog posts in dnaCompany repos. Blog posts document the
-why and how of a change — the narrative companion to commits and
-changelog entries.
+## General rules
 
-## Location and naming
+- For each ticket:
+- Create a blog post before publishing
+- Follow the [Publish Guide](./publish-guide.md)
 
-One file per post, per language and year:
+## Copy the template
 
-```text
-doc/en/blog/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
-doc/de/blog/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
-```
+- Create a year folder `blog/en/dnaYear`, if not present
+- Come up with a summarizing title for the ticket
+- Copy `doc/templates/blog-template-en.md` to `<yyyy>-<mm>-<dd>-title-kebab-case`
 
-Example: `doc/en/blog/2026/2026-08-12-distribute-dna-via-npm.md`
+## Translate the blog post
 
-Both languages, same file name — see the
-[Multi-Language Guide](./multi-language-guide.md).
+- Translate the title of the blog post
+- Copy the English blog post to
+  `blog/de/dnaYear/<yyyy>-<mm>-<dd>-title-kebab-case`
+- Follow the [Multi-Language Guide](./multi-language-guide.md).
 
-## Length
+## Content
 
-One to two screen pages — a digest, not a protocol. More is fine for
-larger refactorings.
-
-## Mandatory structure
-
-```markdown
-# <Title>
-
-## Motivation
-
-<Why, what for, for whom — the bigger goal, not just the trigger.>
-
-## Strategy
-
-<How the goal is reached. 3–7 bullet points.>
-
-## Implementation 1, 2, …
-
-<One focused section per implementation step / work package.>
-
-## Open Points
-
-<Not done yet, known limitations, deferred decisions.>
-```
-
-## Rules
-
-- Always created when publishing: every publish gets a post covering
-  the current ticket — see the [Publish Guide](./publish-guide.md).
-- One post per ticket; the filename date is the publish date.
-  Follow-up tickets get a new file, not a growing old one.
-- Link posts from the README's Documentation section — see the
-  [README Guide](./readme-guide.md).
+- Follow the structure of the copied template
+- Summarize the why, the how as well as the result
+- Write simple and understandable
+- Summarize the content in 60-100 lines
+- Write longer for complex tickets
+- Wrap lines at 80 characters
+- Embed mermaid diagrams
+- Use mermaid dnaMermaidMarkdownBlock markdown blocks

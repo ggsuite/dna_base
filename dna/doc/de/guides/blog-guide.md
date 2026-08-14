@@ -18,7 +18,7 @@ found in the LICENSE file in the root of this package.
 
 - Lege einen Jahresordner in `blog/de/dnaYear` an, sofern nicht vorhanden
 - Denke dir einen zusammenfassenden Titel für das Ticket aus
-- Kopiere `blog/de/template.md` nach `<yyyy>-<mm>-<dd>-titel-kebab-case`
+- Kopiere `doc/templates/blog-template-de.md` nach `<yyyy>-<mm>-<dd>-titel-kebab-case`
 
 ## Übersetze den Blog Post
 

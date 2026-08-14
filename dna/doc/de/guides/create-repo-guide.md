@@ -69,6 +69,15 @@ Klicke `Create Repository`
 
 ## Branch-Regeln einrichten
 
+Führe folgendes Skript aus, um die unten gezeigten Branch-Regeln
+einzurichten:
+
+```bash
+node scripts/setup-github-repo.js
+```
+
+Du willst die Änderungen von Hand vornehmen? Dann so:
+
 Öffne <https://github.com/dnaGitOrgUrl/my_new_repo>
 
 Klicke `Settings`
