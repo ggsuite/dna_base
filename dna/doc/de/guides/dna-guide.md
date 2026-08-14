@@ -8,11 +8,11 @@ found in the LICENSE file in the root of this package.
 
 # DNA-Guide
 
-## Dart-Projekt vorbereiten
+## Bereite ein DNA-Dart-Projekt vor
 
 Kein Dart-Projekt? Diesen Abschnitt überspringen.
 
-### helix, die DNA-Engine, hinzufügen
+### Füge helix, die DNA-Engine hinzu
 
 Wechsle in den Root-Ordner deines Projekts.
 
@@ -26,7 +26,7 @@ Füge `helix`, die DNA-Engine, als Development-Dependency hinzu
 dart pub add helix --dev
 ```
 
-### Eine DNA hinzufügen
+### Erbe eine existierende DNA
 
 Füge ein `DNA`-Repo hinzu, z. B. unser `dna_base`, als
 Dev-Dependency:
@@ -35,7 +35,7 @@ Dev-Dependency:
 dart pub add dna_base --dev
 ```
 
-### Das DNA-Update-Skript installieren
+### Installiere das DNA-Update-Skript
 
 Die DNA wird bei jedem Testlauf aktualisiert.
 
@@ -64,7 +64,7 @@ void main() {
 
 Speichern.
 
-### Die DNA initialisieren
+### Initialisiere die DNA
 
 Tests ausführen
 
@@ -72,7 +72,7 @@ Tests ausführen
 dart test
 ```
 
-## Prüfen, ob die DNA installiert wurde
+## Prüfe, ob die DNA installiert wurde
 
 `dna_base` fügt Doku, Skripte, Configs usw. hinzu.
 Wirf einen Blick hinein:
@@ -82,7 +82,7 @@ cat dna/_vars.json
 cat dna/_generated.json
 ```
 
-### DNAs konfigurieren
+### Konfiguriere die DNA
 
 Lege eine `_dna.json` an
 
@@ -107,7 +107,7 @@ Füge folgenden Code ein
 
 Speichern
 
-### DNA installieren
+### Wende die DNA auf Dein Projekt an
 
 Tests ausführen
 
@@ -115,7 +115,7 @@ Tests ausführen
 dart test
 ```
 
-### Generierte Dateien prüfen
+### Prüfe die generierten Dateien
 
 Jetzt sind die DNA-Dateien aus `dna_base` in dein Projekt gesynct
 

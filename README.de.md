@@ -8,7 +8,7 @@ Die Basis-DNA, die von vielen unserer Projekte verwendet wird
 - `dna/dot-vscode/` — gemeinsame Editor-Einstellungen und
   Extension-Empfehlungen
 - `dna/LICENSE` — das MIT-Lizenz-Template (Variablen
-  `dnaCopyrightHolder`, `dnaCopyrightYear`)
+  `dnaCopyrightHolder`, `dnaYear`)
 - `dna/doc/` — die kanonischen Entwickler-Guides auf Englisch und
   Deutsch (`doc/en/guides/`, `doc/de/guides/`: Develop-Guide,
   Install-Guides, …)

@@ -6,7 +6,9 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# API Dokumentations Guide
+# API Clean Code Guide
+
+- Beachte die folgenden Regeln beim Erstellen von Code
 
 ## License Header
 
@@ -14,8 +16,10 @@ found in the LICENSE file in the root of this package.
 
 ## Allgemein
 
-- Hinterlege keine Projektmanagement-Anweisungen ("Todo, vielleicht später)
-- Erledige sie sofort
+- Erledige Todos, FixMes sofort, falls nicht lege Tickets in Jira etc. an
+- Füge kein Project-Management im Code hinzu
+- Beginne Kommentare mit Großbuchstaben gefolgt von Kleinbuchstaben
+- Verfasse Quellcode und Kommentare in Englisch
 
 ## API-Dokumentationen
 
@@ -37,11 +41,11 @@ found in the LICENSE file in the root of this package.
 ## Klassen und Funktionen
 
 - Trenne wichtige Funktionen mit `// .......`
-- Beginne Kommentare mit Großbuchstaben
 - Verwende ein Leerzeichen zwischen `//` und Text
 - Liste die Konstruktoren am Anfang
 - Platziere öffentliche Methoden oben
 - Platziere private Methoden unten
+- Trenne öffentliche und private Methode durch einen `Private` Kommentarblock
 - Teile methoden mit mehr als 3 Zeilen Code in private und öffentliche
 - Kommentiere alle öffentlichen Funktionen
 

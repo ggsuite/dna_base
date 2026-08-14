@@ -8,32 +8,22 @@ found in the LICENSE file in the root of this package.
 
 # Index-Guide
 
-Jedes Repo hat eine `index.md` im Hauptverzeichnis. Claude liest sie
-bei der Ticket-Planung, um zu entscheiden, welche Repos ein Ticket
-braucht.
+## Erstelle eine index.md
 
-## Template
+- Sofern nicht vorhanden:
+  - Kopiere `doc/templates/index-template.md` nach `index.md`
+  - Ersetze `dnaCopyrightHolder` durch den Wert aus `dna/_vars.json`
 
-```markdown
-# <pkg>
+## Verwende index.md für die Planung
 
-<1–2 Sätze: Was dieses Repo macht.>
+- Aktualisiere die Index-Datei vor dem Publishen jedes Tickets
+- Lies diese Index-Datei vor der Planung eines Tickets
+- Lies ggf. auch die Index Dateien aller Ocean Repos
 
-## Domain / Goal
+## Aktualisiere index.md vor jedem Publishen
 
-<1–3 Stichpunkte: Welchen Problemraum dieses Repo besitzt.>
-
-## Interfaces
-
-- uses `<repo-a>`: <wofür / über welche API>
-- used by `<repo-b>`: <wofür / über welche API>
-```
-
-## Regeln
-
-- So tokensparend wie möglich: Stichworte schlagen Sätze; keine Prosa,
-  die die README wiederholt.
-- Die Schnittstellen entscheiden die Ticket-Zugehörigkeit — präzise
-  und aktuell halten.
-- Ändern sich Ziel oder Schnittstellen, aktualisiert dasselbe Ticket
-  die `index.md`.
+- Entscheide dann, welche Repos Du für Dein Ticket benötigst
+- Schreibe so kurz und tokensparend wie möglich
+- Verwende Stichworte oder Stichpunkte statt Sätze
+- Entscheide dann, welche Repos Du für Dein Ticket benötigst
+- Aktualisiere geänderte Dateien oder Schnittstellen

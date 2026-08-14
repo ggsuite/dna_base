@@ -8,13 +8,13 @@ found in the LICENSE file in the root of this package.
 
 # Entwickeln
 
-## Vorbereiten
+## Bereite vor
 
 [Benötigte Software installieren](./install-guide.md)
 
 [gg-Workspace vorbereiten](./install-guide/install-gg-workspace-guide.md)
 
-## Ticket anlegen
+## Lege ein Ticket an
 
 ```bash
 cd ~/dev/ # workspace
@@ -22,35 +22,35 @@ gg do create ticket dnaJiraPrefix-145 -m"Fix issue abc"
 cd tickets/dnaJiraPrefix-145
 ```
 
-## Git-Repositories hinzufügen
+## Füge Git-Repositories hinzu
 
 ```bash
 gg do add repo1 repo2
 ```
 
-## Workspace öffnen
+## Öffne den Workspace in Vscode
 
 ```bash
 gg do code
 ```
 
-## Implementieren
+## Implementiere
 
 Implementiere deine Features
 
-## Committen
+## Committe
 
 ```bash
 gg do commit
 ```
 
-## Pushen
+## Pushe
 
 ```bash
 gg do push
 ```
 
-## Review
+## Reviewe
 
 ```bash
 gg do review
@@ -59,7 +59,7 @@ gg do review
 gg erstellt Pull Requests für jedes Repo und gibt die URLs im Terminal
 aus.
 
-## Publishen
+## Publishe
 
 ```bash
 gg do publish

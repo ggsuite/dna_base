@@ -7,7 +7,7 @@ inherits via [helix](https://github.com/ggsuite/helix):
 - `dna/dot-vscode/` — shared editor settings and extension
   recommendations
 - `dna/LICENSE` — the MIT license template (`dnaCopyrightHolder`,
-  `dnaCopyrightYear` variables)
+  `dnaYear` variables)
 - `dna/doc/` — the canonical developer guides in English and German
   (`doc/en/guides/`, `doc/de/guides/`: develop guide, install guides,
   …)
