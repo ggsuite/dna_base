@@ -5,7 +5,7 @@
       "name": "base",
       "package": "helix",
       "ecosystem": null,
-      "resolvedVersion": "0.0.4",
+      "resolvedVersion": "0.1.0",
       "via": null,
       "hash": "0x6883da335b415f9d"
     },
@@ -21,7 +21,7 @@
   "claude": {
     "claudeMdInclude": null
   },
-  "baseVersion": "0.0.4",
+  "baseVersion": "0.1.0",
   "baseHash": "0x6883da335b415f9d",
   "hash": null,
   "instances": [
@@ -40,6 +40,10 @@
     {
       "path": ".claude/skills/review/SKILL.md",
       "hash": "0x4241d65b6c8fe04c"
+    },
+    {
+      "path": ".github/workflows/quick_check.yaml",
+      "hash": "0xa61b5062f48e430c"
     },
     {
       "path": ".prettierignore",
@@ -207,55 +211,59 @@
     },
     {
       "path": "scripts/delete-feature-branch.js",
-      "hash": "0xb0e1a4ecaacd7466"
+      "hash": "0x219ac0a3635ee644"
     },
     {
       "path": "scripts/functions/colors.js",
-      "hash": "0x2450d0afeffc8b9b"
+      "hash": "0xdfd97f3804665811"
     },
     {
       "path": "scripts/functions/current-branch.js",
-      "hash": "0xab7315a7ae39e6a4"
+      "hash": "0xb9ebbadf45893278"
     },
     {
       "path": "scripts/functions/directories.js",
-      "hash": "0x1ba5218f89560d8c"
+      "hash": "0x148d4ebb8aa75523"
     },
     {
       "path": "scripts/functions/get-repo-urls.js",
-      "hash": "0x99992a8ea80fb48c"
+      "hash": "0x4c7b3897973acec3"
     },
     {
       "path": "scripts/functions/get-version.js",
-      "hash": "0x06e9eb19d7aab38d"
+      "hash": "0xfe46316558755cf2"
     },
     {
       "path": "scripts/functions/is-clean-repo.js",
-      "hash": "0xfc3906fa4b1ed4ff"
+      "hash": "0x8aa95ca51d9d6517"
     },
     {
       "path": "scripts/functions/is-main-up-to-date.js",
-      "hash": "0xcf79ad1f9ae90bff"
+      "hash": "0xe1ab1826d0ddd039"
     },
     {
       "path": "scripts/functions/pull-request-url.js",
-      "hash": "0x12e4502484ee8615"
+      "hash": "0x5398755a61a59928"
     },
     {
       "path": "scripts/functions/run-command.js",
-      "hash": "0x10974d4e39a18659"
+      "hash": "0x085b390fcb9256ab"
     },
     {
       "path": "scripts/functions/sync-folders.js",
-      "hash": "0x1c268f33f343a237"
+      "hash": "0x4f83165fd92ec49d"
     },
     {
       "path": "scripts/rename-class.js",
       "hash": "0xa9daec4f3ea514b7"
     },
     {
+      "path": "scripts/setup-github-repo.js",
+      "hash": "0x5907588070a580ca"
+    },
+    {
       "path": "scripts/wait-for-pr.js",
-      "hash": "0x8b422112f671ec87"
+      "hash": "0x1360c661984b78a8"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@tssuite/dna-base",
-  "version": "0.0.4",
+  "version": "0.2.0",
   "description": "Shared base DNA: configs, docs, scripts and agent skills for repos",
   "keywords": [
     "dna",
