@@ -6,25 +6,22 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# Start CLAUDE (instruction for the human developer)
+# Development guide for AIs
 
-## Prepare
+## Ask the developer for the ticket infos
 
-[Install required software](./install-guide.md)
+- Ask for the ticket ID
+- Ask for the ticket title
+- Ask for the ticket description
 
-[Prepare a gg workspace](./install-guide/install-gg-workspace-guide.md)
+## Replace in this document
 
-## Open CLAUDE
+- Replace `~/dev/` by the workspace directory from the memory
+- Ask for the workspace directory if none is known
+- Replace `gGS-145` by the ticket ID you asked for
+- Replace `Fix issue abc` by the ticket title you asked for
 
-```bash
-claude
-```
-
-Give CLAUDE the instruction for implementing a ticket.
-
-# CLAUDE: Working instruction (after entering the task)
-
-## CLAUDE: Create a ticket
+## Create a ticket
 
 ```bash
 cd ~/dev/ # workspace
@@ -32,16 +29,16 @@ gg do create ticket gGS-145 -m"Fix issue abc"
 cd tickets/gGS-145
 ```
 
-## CLAUDE: Add git repositories
+## Add git repositories
 
-Look at the index.md of each repo in .ocean and decide which repos
-need to be added to the ticket.
+Look at the `index.md` of each repo in .ocean and decide which repos need to
+be added to the ticket.
 Make a plan for how you roughly want to implement the ticket.
-If certain parts of the implementation belong to a domain that does not
-yet exist in the .ocean folder, consider creating a new repository.
-Ask the user about this. Also explain to the user what you roughly want
-to change in which repo to implement the ticket and let them confirm
-that the corresponding repos are added to the ticket.
+If certain parts of the implementation belong to a domain that does not yet
+exist in the .ocean folder, consider creating a new repository.
+Ask the user about this. Also explain to the user what you roughly want to
+change in which repo to implement the ticket and let them confirm that the
+corresponding repos are added to the ticket.
 
 After the user's confirmation, add the repos to the ticket:
 
@@ -49,29 +46,29 @@ After the user's confirmation, add the repos to the ticket:
 gg do add repo1 repo2
 ```
 
-## CLAUDE: Open the workspace in Vscode
+## Open the workspace in Vscode
 
 ```bash
 gg do code
 ```
 
-## CLAUDE: Implement
+## Implement
 
 Implement your features based on the guides
 
-## CLAUDE: Commit
+## Commit
 
 ```bash
 gg do commit
 ```
 
-## CLAUDE: Push
+## Push
 
 ```bash
 gg do push
 ```
 
-## CLAUDE: Review
+## Review
 
 Let the user confirm that the review phase is started.
 
@@ -84,7 +81,7 @@ terminal.
 
 Afterwards load the review-light skill and execute it.
 
-## CLAUDE: Publish
+## Publish
 
 - Create a blog post for the current ticket
 - Update the index.md and README.md

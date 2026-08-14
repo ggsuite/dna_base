@@ -17,7 +17,7 @@ found in the LICENSE file in the root of this package.
 
 ### Guides
 
-- Gehe die guides in doc/de|en/guides durch und schaue was im Code angepasst
+- Gehe die guides in `doc/de|en/guides` durch und schaue was im Code angepasst
   angepasst werden muss dass alle Guides erfüllt sind
 
 ### Redundanz / DRY

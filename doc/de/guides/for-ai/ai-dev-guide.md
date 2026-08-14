@@ -6,25 +6,22 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# CLAUDE starten (Anweisung für den menschlichen Entwickler)
+# Development guide for AI
 
-## Bereite vor
+## Frage die Infos zum Ticket vom  Entwickler ab
 
-[Benötigte Software installieren](./install-guide.md)
+- Frage die Ticket-ID ab
+- Frage den Titel des Tickets ab
+- Frage die Beschreibung des Tickets ab
 
-[gg-Workspace vorbereiten](./install-guide/install-gg-workspace-guide.md)
+## Ersetze in diesem Dokumen
 
-## Öffne CLAUDE
+- Ersetze `~/dev/` durch das Workspace-Verzeichnis aus der Erinnerung
+- Frage das Workspace Verzeichnis ab, wenn keines bekannt ist
+- Ersetze `gGS-145` durch die abgefragte Ticket-ID
+- Ersetze `Fix issue abc` durch den abgefragten Ticket-Titel
 
-```bash
-claude
-```
-
-Gib CLAUDE die Anweisung für die Umsetzung eines Tickets.
-
-# CLAUDE: Arbeitsanweisung (nach Eingabe der Aufgabe)
-
-## CLAUDE: Lege ein Ticket an
+## Lege ein Ticket an
 
 ```bash
 cd ~/dev/ # workspace
@@ -32,9 +29,9 @@ gg do create ticket gGS-145 -m"Fix issue abc"
 cd tickets/gGS-145
 ```
 
-## CLAUDE: Füge Git-Repositories hinzu
+## Füge Git-Repositories hinzu
 
-Schau dir die index.md eines jeden Repos in .ocean an und entscheide welche
+Schau dir die `index.md` eines jeden Repos in .ocean an und entscheide welche
 Repos dem Ticket hinzugefügt werden müssen.
 Mache einen Plan wie du das Ticket grob umsetzen möchtest.
 Falls gewisse Dinge bei der Umsetzung zu einer noch nicht vorhandenen Domain
@@ -49,29 +46,29 @@ Nach Bestätigung vom Benutzer fügst du die Repos zum Ticket hinzu:
 gg do add repo1 repo2
 ```
 
-## CLAUDE: Öffne den Workspace in Vscode
+## Öffne den Workspace in Vscode
 
 ```bash
 gg do code
 ```
 
-## CLAUDE: Implementiere
+## Implementiere
 
 Implementiere deine Features auf Basis der Guides
 
-## CLAUDE: Committe
+## Committe
 
 ```bash
 gg do commit
 ```
 
-## CLAUDE: Pushe
+## Pushe
 
 ```bash
 gg do push
 ```
 
-## CLAUDE: Review
+## Review
 
 Lass dir durch den Nutzer bestätigen, dass die Review-Phase gestartet wird.
 
@@ -84,7 +81,7 @@ aus.
 
 Lade danach den review-light Skill und führe ihn aus.
 
-## CLAUDE: Publishe
+## Publishe
 
 - Lege einen Blog Post für das aktuelle Ticket an
 - aktualisiere die index.md und README.md

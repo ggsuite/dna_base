@@ -8,25 +8,8 @@ found in the LICENSE file in the root of this package.
 
 # Neues ggsuite-Repository anlegen
 
-## Inhalt <!-- omit in toc -->
 
-- [Neues ggsuite-Repository anlegen](#neues-dnagitorg-repository-anlegen)
-  - [Diese Datei nach tmp kopieren](#diese-datei-nach-tmp-kopieren)
-  - [In diesem Dokument ersetzen](#in-diesem-dokument-ersetzen)
-  - [Repo anlegen](#repo-anlegen)
-  - [Branch-Regeln einrichten](#branch-regeln-einrichten)
-  - [Branches nach dem Merge löschen lassen](#branches-nach-dem-merge-löschen-lassen)
-  - [Neues Projekt auschecken und öffnen](#neues-projekt-auschecken-und-öffnen)
-  - [template-project in my\_new\_repo umbenennen](#template-project-in-my_new_repo-umbenennen)
-    - [Rename-Skript aufrufen](#rename-skript-aufrufen)
-  - [pubspec.yaml anpassen](#pubspecyaml-anpassen)
-  - [Initialen Stand committen](#initialen-stand-committen)
-  - [Branch pushen](#branch-pushen)
-    - [Pull Request anlegen und abschließen](#pull-request-anlegen-und-abschließen)
-    - [Feature-Branch löschen](#feature-branch-löschen)
-  - [Das erste Mal auf pub.dev veröffentlichen](#das-erste-mal-auf-pubdev-veröffentlichen)
-
-## Diese Datei nach tmp kopieren
+## Kopiere diese Datei nach tmp
 
 Öffne diese Datei in vscode
 
@@ -36,7 +19,7 @@ Gehe in dein Temp-Verzeichnis, z. B. `/tmp`
 
 Speichere die Datei dort.
 
-## In diesem Dokument ersetzen
+## Ersetze in diesem Dokument
 
 In der _gesamten_ Datei:
 
@@ -45,7 +28,7 @@ Ersetze `my_new_repo` durch den Namen deines neuen Repos
 Ersetze `A 60-70 char description of my new project` durch eine kurze
 Projektbeschreibung
 
-## Repo anlegen
+## Lege ein Repo an
 
 Öffne <https://github.com/https://github.com/ggsuite>
 
@@ -67,7 +50,7 @@ Wähle `gg_template_project` oder `gg_template_with_cli`
 
 Klicke `Create Repository`
 
-## Branch-Regeln einrichten
+## Richte die Branch-Regeln ein
 
 Führe folgendes Skript aus, um die unten gezeigten Branch-Regeln
 einzurichten:
@@ -129,7 +112,7 @@ Klicke `Create`
 
 Authentifiziere dich, wenn du danach gefragt wirst
 
-## Branches nach dem Merge löschen lassen
+## Lass Branches nach dem Merge löschen
 
 Öffne <https://github.com/https://github.com/ggsuite/my_new_repo>
 
@@ -146,7 +129,7 @@ Setze folgende Einstellungen:
 - [x] `Allow auto-merge`
 - [x] `Automatically delete head branches`
 
-## Neues Projekt auschecken und öffnen
+## Checke das neue Projekt aus und öffne es
 
 Checke das Projekt aus
 
@@ -168,15 +151,15 @@ Bereite einen neuen Branch und Pull Request vor
 git checkout -b rename-classes
 ```
 
-## template-project in my_new_repo umbenennen
+## Benenne template-project in my_new_repo um
 
-### Rename-Skript aufrufen
+### Rufe das Rename-Skript auf
 
 ```bash
 node scripts/rename-class.js gg_template_project my_new_repo
 ```
 
-## pubspec.yaml anpassen
+## Passe die pubspec.yaml an
 
 Öffne `pubspec.yaml` und nimm folgende Änderungen vor:
 
@@ -184,19 +167,19 @@ Setze die Version auf `0.0.0` zurück
 
 Setze die Description auf `A 60-70 char description of my new project`
 
-## Initialen Stand committen
+## Committe den initialen Stand
 
 ```bash
 git add .
 git commit -am "Rename template-project into my_new_repo"
 ```
 
-## Branch pushen
+## Pushe den Branch
 
 Klicke in `vscode` auf der `linken Seite` auf das
 `Source Control`-Icon.
 
-### Pull Request anlegen und abschließen
+### Lege den Pull Request an und schließe ihn ab
 
 ```bash
 git push --set-upstream origin rename-classes
@@ -205,13 +188,13 @@ gh pr merge --auto --squash
 node ./scripts/wait-for-pr.js
 ```
 
-### Feature-Branch löschen
+### Lösche den Feature-Branch
 
 ```bash
 node scripts/delete-feature-branch.js
 ```
 
-## Das erste Mal auf pub.dev veröffentlichen
+## Veröffentliche das erste Mal auf pub.dev
 
 ```bash
 dart pub publish

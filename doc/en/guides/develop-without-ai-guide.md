@@ -8,27 +8,33 @@ found in the LICENSE file in the root of this package.
 
 # Develop without AI
 
-## Prepare
+## Prepare everything
 
-[Install required software](./install-guide.md)
+If you have not done that yet:
 
-[Prepare a gg workspace](./install-guide/install-gg-workspace-guide.md)
+[Install the required software](./install-guide.md)
 
-## Create a ticket
+[Initialize a gg workspace](./install-guide/install-gg-workspace-guide.md)
+
+## Switch into your workspace
 
 ```bash
-cd ~/dev/ # workspace
-gg do create ticket gGS-145 -m"Fix issue abc"
-cd tickets/gGS-145
+cd ~/dev/
 ```
 
-## Add git repositories
+## Start Claude
+
+```bash
+claude
+```
+
+## Add tickets
 
 ```bash
 gg do add repo1 repo2
 ```
 
-## Open workspace
+## Open the workspace in Vscode
 
 ```bash
 gg do code
@@ -36,7 +42,7 @@ gg do code
 
 ## Implement
 
-Implement your features
+Implement your features based on the guides
 
 ## Commit
 
@@ -56,14 +62,8 @@ gg do push
 gg do review
 ```
 
-gg creates pull requests for each repo and prints the URLs to the
-terminal.
-
 ## Publish
 
 ```bash
 gg do publish
 ```
-
-gg will trigger a pull request merge, publish the changes to the registry.
-Finally the version tag will be added and pushed.

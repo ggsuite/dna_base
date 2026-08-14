@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x879adbba2c479044"
+      "hash": "0xa4bd3a6e0a48f4a3"
     }
   ],
   "claude": {
@@ -31,7 +31,7 @@
     },
     {
       "path": ".claude/skills/review-light/SKILL.md",
-      "hash": "0x8de2739516628eb0"
+      "hash": "0xee0d59c113a8416e"
     },
     {
       "path": ".github/workflows/quick_check.yaml",
@@ -62,24 +62,20 @@
       "hash": "0x0cb680560aebe126"
     },
     {
-      "path": "doc/de/guides/claude-dev-instructions-guide.md",
-      "hash": "0x8053039ec27b60c9"
-    },
-    {
       "path": "doc/de/guides/clean-code-guide.md",
       "hash": "0x0e4f480a63a7d3b3"
     },
     {
       "path": "doc/de/guides/create-repo-guide.md",
-      "hash": "0x01940bc72c15a292"
+      "hash": "0x03e74c76de55cc1e"
     },
     {
-      "path": "doc/de/guides/develop-with-ai-guide.md",
-      "hash": "0xdfb6425237a9b8ab"
+      "path": "doc/de/guides/develop-guide.md",
+      "hash": "0x42096315e56bf38c"
     },
     {
       "path": "doc/de/guides/develop-without-ai-guide.md",
-      "hash": "0x56cc0698a70f56c6"
+      "hash": "0x0377da6db3e7cd10"
     },
     {
       "path": "doc/de/guides/dna-guide.md",
@@ -88,6 +84,18 @@
     {
       "path": "doc/de/guides/dna-guides-guide.md",
       "hash": "0xf0f1366958a9cfba"
+    },
+    {
+      "path": "doc/de/guides/doc-guide.md",
+      "hash": "0x45efd301d2cb6b2f"
+    },
+    {
+      "path": "doc/de/guides/for-ai/ai-dev-guide.md",
+      "hash": "0x32583d01ae1bf01f"
+    },
+    {
+      "path": "doc/de/guides/for-ai/ai-review-guide.md",
+      "hash": "0x66297a639d579bfd"
     },
     {
       "path": "doc/de/guides/index-guide.md",
@@ -142,20 +150,12 @@
       "hash": "0x4cc61d3eb708b981"
     },
     {
-      "path": "doc/de/guides/review-guide.md",
-      "hash": "0x1b77086657973807"
-    },
-    {
       "path": "doc/de/guides/review-heavy-guide.md",
-      "hash": "0xf0ca54617ef5b54f"
+      "hash": "0xae3006e8810936b7"
     },
     {
       "path": "doc/en/guides/blog-guide.md",
       "hash": "0xca395ddba673dc06"
-    },
-    {
-      "path": "doc/en/guides/claude-dev-instructions-guide.md",
-      "hash": "0x8053039ec27b60c9"
     },
     {
       "path": "doc/en/guides/clean-code-guide.md",
@@ -163,15 +163,15 @@
     },
     {
       "path": "doc/en/guides/create-repo-guide.md",
-      "hash": "0xf0ec367e6e528842"
+      "hash": "0xe94cbb14b4f9c26a"
     },
     {
-      "path": "doc/en/guides/develop-with-ai-guide.md",
-      "hash": "0x5ca6afea249624eb"
+      "path": "doc/en/guides/develop-guide.md",
+      "hash": "0x5863e1916da62f74"
     },
     {
       "path": "doc/en/guides/develop-without-ai-guide.md",
-      "hash": "0xe78aa8b438bf3fac"
+      "hash": "0xde6789e089be0963"
     },
     {
       "path": "doc/en/guides/dna-guide.md",
@@ -180,6 +180,18 @@
     {
       "path": "doc/en/guides/dna-guides-guide.md",
       "hash": "0x463551f05deabed6"
+    },
+    {
+      "path": "doc/en/guides/doc-guide.md",
+      "hash": "0xf89e7fbaa6f27a40"
+    },
+    {
+      "path": "doc/en/guides/for-ai/ai-dev-guide.md",
+      "hash": "0x0baaa7fa78710625"
+    },
+    {
+      "path": "doc/en/guides/for-ai/ai-review-guide.md",
+      "hash": "0xccbbb0c7737283f3"
     },
     {
       "path": "doc/en/guides/index-guide.md",
@@ -234,12 +246,8 @@
       "hash": "0x6638d113d811af84"
     },
     {
-      "path": "doc/en/guides/review-guide.md",
-      "hash": "0x018bf8ff3d16530d"
-    },
-    {
       "path": "doc/en/guides/review-heavy-guide.md",
-      "hash": "0xa3152149de39f870"
+      "hash": "0x7ce0d4b014978312"
     },
     {
       "path": "doc/templates/blog-template-de.md",
@@ -259,7 +267,7 @@
     },
     {
       "path": "doc/templates/readme-template.md",
-      "hash": "0x1e2cfe70283275bf"
+      "hash": "0x337f489cf7b19984"
     },
     {
       "path": "scripts/delete-feature-branch.js",
