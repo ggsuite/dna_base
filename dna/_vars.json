@@ -6,5 +6,6 @@
   "dnaGitOrgUrl": "https://github.com/dnaGitOrg",
   "dnaProjectName": "<your-project>",
   "dnaJiraPrefix": "GGS",
-  "dnaPubDevPublisher": "inlavigo.com"
+  "dnaPubDevPublisher": "inlavigo.com",
+  "dnaGitQuickCheckPipelineName": "Quick Check"
 }

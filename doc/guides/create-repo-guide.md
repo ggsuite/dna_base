@@ -21,7 +21,7 @@ found in the LICENSE file in the root of this package.
     - [Call rename script](#call-rename-script)
   - [Edit pubspec.yaml](#edit-pubspecyaml)
   - [Commit the initial state](#commit-the-initial-state)
-  - [Push branch](#push-branch)
+  - [Merge branch](#merge-branch)
     - [Create and complete pull request](#create-and-complete-pull-request)
     - [Delete feature branch](#delete-feature-branch)
   - [Publish the first time to publdev](#publish-the-first-time-to-publdev)
@@ -67,6 +67,13 @@ Click `Create Repository`
 
 
 ## Setup branch rules
+
+Execute the following script to setup the branch rules shown below:
+
+```bash
+node scripts/setup-github-repo.js
+```
+Want to make up the changes manually? Dho this:
 
 Open <https://github.com/https://github.com/ggsuite/my_new_repo>
 
@@ -181,7 +188,7 @@ git add .
 git commit -am "Rename template-project into my_new_repo"
 ```
 
-## Push branch
+## Merge branch
 
 In `vscode` at the `left side`, click `Source Control` icon.
 

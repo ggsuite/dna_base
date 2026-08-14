@@ -2,4 +2,4 @@
 // Kept in sync by test/dna_base_version.test.ts.
 
 /** The version of the `@tssuite/dna-base` package. */
-export const dnaBaseVersion = '0.1.0';
+export const dnaBaseVersion = '0.2.0';
