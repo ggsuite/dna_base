@@ -18,7 +18,7 @@ found in the LICENSE file in the root of this package.
 
 - Create a year folder `blog/en/2026`, if not present
 - Come up with a summarizing title for the ticket
-- Copy `blog/en/template.md` to `<yyyy>-<mm>-<dd>-title-kebab-case`
+- Copy `doc/templates/blog-template-en.md` to `<yyyy>-<mm>-<dd>-title-kebab-case`
 
 ## Translate the blog post
 
