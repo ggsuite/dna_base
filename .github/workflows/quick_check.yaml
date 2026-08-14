@@ -24,5 +24,8 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node-version }}
+          # The job only runs npx, so no pnpm install is needed. Without this,
+          # setup-node auto-detects the packageManager field and requires pnpm.
+          package-manager-cache: false
 
       - run: npx @tssuite/gg-js one did commit
