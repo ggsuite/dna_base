@@ -14,18 +14,17 @@ found in the LICENSE file in the root of this package.
 - Erstelle einen Blog Post vor dem Publishen
 - Orientiere dich Dich am [Publish Guide](./publish-guide.md)
 
+## Wähle die Sprache des Prompts
+
+- Wenn der Prompt in Englisch ist, schreibe einen deutschen Blog Post
+- Anonsten schreibe in Englisch
+
 ## Kopiere das Template
 
-- Lege einen Jahresordner in `blog/de/dnaYear` an, sofern nicht vorhanden
+- Lege einen Jahresordner in `blog/de|en/dnaYear` an, sofern nicht vorhanden
 - Denke dir einen zusammenfassenden Titel für das Ticket aus
-- Kopiere `doc/templates/blog-template-de.md` nach `<yyyy>-<mm>-<dd>-titel-kebab-case`
-
-## Übersetze den Blog Post
-
-- Übersetze den Titel des Blog Posts
-- Kopiere den deutschen Blog Post nach
-  `blog/en/dnaYear/<yyyy>-<mm>-<dd>-titel-kebab-case`
-- Beachte den [Multi-Language-Guide](./multi-language-guide.md).
+- Übersetze den Titel nach englisch und leite daraus einen Dateinamen-Titel ab
+- Kopiere `doc/templates/blog-template-de|en.md` nach `<yyyy>-<mm>-<dd>-titel-en-kebab-case`
 
 ## Inhalt
 
@@ -35,5 +34,9 @@ found in the LICENSE file in the root of this package.
 - Fasse den Inhalt auf 60-100 Zeilen zusammen
 - Schreibe bei komplexen Tickets auch länger
 - Brich Zeilen auf 80 Zeichen um
-- Bette Mermaid-Diagramme ein
+- Bette bei Bedarf Mermaid-Diagramme ein
 - Verwende Mermaid dnaMermaidMarkdownBlock markdown Blöcke
+
+## Übersetzung
+
+- Schaue in den [Multi Language Guide](doc/de/guides/multi-language-guide.md)
