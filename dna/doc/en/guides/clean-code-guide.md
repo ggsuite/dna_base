@@ -6,7 +6,9 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# API Clean Code Guide
+# Clean Code Guide
+
+- Follow the rules below when creating code
 
 ## License Header
 
@@ -16,25 +18,26 @@ found in the LICENSE file in the root of this package.
 
 - Resolve todos and fixmes immediately, otherwise create tickets in Jira etc.
 - Do not add project management into the code
-- Start comments with an uppercase letter followed by lowercase letters
+- Write open points into [doc/de|en/issues.md](issues.md)
+- Start comments with an uppercase letter followed by space and lowercase letters
 - Write source code and comments in English
 
 ## API documentation
 
-- Document classes and functions with one line
+- Document classes and functions with one line, when possible
 - Write simple and understandable
-- Compress API documentation
 - Do not exceed the 80 character limit
-- Use the default API comment of the respective language (`///`, `/* ..*/`)
+- Use the default API doc syntax of the respective language (`///`, `/* ..*/`)
 - Document private members inline
 - Use 3rd person indicative without naming the function (`Returns ...`)
 - Reference other members in the respective language form (e.g. Dart: `[name]`)
 
 ## Documentation of functions
 
-- Split functions into sections of about 3 - 10 lines
-- Comment the content of the section with one line of code
-- Allow readers to quickly skim and understand the code
+- Split functions into blocks of about 3 - 10 lines
+- Summarize the content of the block with a one line comment
+- Thus allow readers to quickly skim and understand the code
+- When it reads well, extract the blocks into a documented function
 
 ## Classes and functions
 
@@ -44,7 +47,7 @@ found in the LICENSE file in the root of this package.
 - Place public methods at the top
 - Place private methods at the bottom
 - Separate public and private methods by a `Private` comment block
-- Split methods with more than 3 lines of code into private and public ones
+- Split methods with more than 5 lines of code into private and public ones
 - Comment all public functions
 
 ## Example constructors
@@ -52,24 +55,8 @@ found in the LICENSE file in the root of this package.
 - Add an `example()` constructor to each class
 - It returns a fully preconfigured example instance
 - Allow configuring the example via named parameters
+- At the end of the constructors
 
 ## Example class
 
-```dart
-/// Represents a value of Type T in the memory.
-class GgValue<T> {
-  // ...........................................................................
-  /// Sets the value and triggers an update on the stream.
-  set value(T newVal) { /* … */ }
-
-  // ######################
-  // Private
-  // ######################
-
-  // .............
-  // Stream
-
-  // ...........................................................................
-  T _value;
-}
-```
+Follow `doc/templates/class-template.dart`

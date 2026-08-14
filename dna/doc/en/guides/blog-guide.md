@@ -14,18 +14,17 @@ found in the LICENSE file in the root of this package.
 - Create a blog post before publishing
 - Follow the [Publish Guide](./publish-guide.md)
 
+## Choose the language of the prompt
+
+- When the prompt is in English, write a German blog post
+- Otherwise write in English
+
 ## Copy the template
 
-- Create a year folder `blog/en/dnaYear`, if not present
+- Create a year folder `blog/de|en/dnaYear`, if not present
 - Come up with a summarizing title for the ticket
-- Copy `doc/templates/blog-template-en.md` to `<yyyy>-<mm>-<dd>-title-kebab-case`
-
-## Translate the blog post
-
-- Translate the title of the blog post
-- Copy the English blog post to
-  `blog/de/dnaYear/<yyyy>-<mm>-<dd>-title-kebab-case`
-- Follow the [Multi-Language Guide](./multi-language-guide.md).
+- Translate the title into English and derive a file name title from it
+- Copy `doc/templates/blog-template-de|en.md` to `<yyyy>-<mm>-<dd>-title-en-kebab-case`
 
 ## Content
 
@@ -35,5 +34,9 @@ found in the LICENSE file in the root of this package.
 - Summarize the content in 60-100 lines
 - Write longer for complex tickets
 - Wrap lines at 80 characters
-- Embed mermaid diagrams
+- Embed mermaid diagrams when needed
 - Use mermaid dnaMermaidMarkdownBlock markdown blocks
+
+## Translation
+
+- Have a look into the [Multi Language Guide](doc/en/guides/multi-language-guide.md)

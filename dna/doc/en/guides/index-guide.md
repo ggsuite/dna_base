@@ -12,18 +12,16 @@ found in the LICENSE file in the root of this package.
 
 - If not present:
   - Copy `doc/templates/index-template.md` to `index.md`
-  - Replace `dnaCopyrightHolder` by the value from `dna/_vars.json`
 
 ## Use index.md for planning
 
-- Update the index file before publishing each ticket
-- Read this index file before planning a ticket
+- Read the index file before planning a ticket
 - If needed, also read the index files of all ocean repos
+- Then decide which repos you need for your ticket
 
 ## Update index.md before each publish
 
-- Then decide which repos you need for your ticket
+- Update the index file before publishing each ticket
 - Write as short and token-saving as possible
 - Use keywords or bullet points instead of sentences
-- Then decide which repos you need for your ticket
 - Update changed files or interfaces

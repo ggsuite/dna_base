@@ -18,20 +18,8 @@ Die Basis-DNA, die von vielen unserer Projekte verwendet wird
 
 ## Verwendung
 
-Als Dev-Dependency deklarieren und einmalig initialisieren:
-
-```bash
-pnpm add -D @tssuite/dna-base   # TypeScript projects
-dart pub add dev:dna_base       # Dart projects
-helix init
-```
-
-Der platzierte Test instanziiert und verifiziert die DNA bei jedem
-Testlauf. Ökosystem-Layer
-([dna_dart](https://github.com/ggsuite/dna_dart),
-[dna-ts](https://github.com/tssuite/dna-ts)) bauen auf diesem Paket
-auf — Konsumenten hängen üblicherweise von diesen ab statt direkt von
-dna_base.
+Um diese DNA in deinem Projekt zu verwenden, schaue in den
+[dna/doc/de/guides/dna-guide.md](DNA guide).
 
 ## Entwicklung
 
