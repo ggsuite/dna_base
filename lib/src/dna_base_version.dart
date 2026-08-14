@@ -9,4 +9,4 @@
 // coverage:ignore-file
 
 /// The version of the `dna_base` package.
-const String dnaBaseVersion = '0.2.0';
+const String dnaBaseVersion = '0.3.0';

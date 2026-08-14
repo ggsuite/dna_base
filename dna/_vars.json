@@ -2,10 +2,11 @@
   "dnaCompany": "ggsuite",
   "dnaGitOrg": "ggsuite",
   "dnaCopyrightHolder": "ggsuite",
-  "dnaCopyrightYear": "2026",
+  "dnaYear": "2026",
   "dnaGitOrgUrl": "https://github.com/dnaGitOrg",
   "dnaProjectName": "<your-project>",
   "dnaJiraPrefix": "GGS",
   "dnaPubDevPublisher": "inlavigo.com",
-  "dnaGitQuickCheckPipelineName": "Quick Check"
+  "dnaGitQuickCheckPipelineName": "Quick Check",
+  "dnaMermaidMarkdownBlock": "```"
 }
