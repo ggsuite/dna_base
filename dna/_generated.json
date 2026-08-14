@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0xebe1c46ee5192877"
+      "hash": "0x15c4548bb600e941"
     }
   ],
   "claude": {
@@ -51,31 +51,31 @@
     },
     {
       "path": "doc/de/guides/blog-guide.md",
-      "hash": "0xe0c55d5d6084417e"
+      "hash": "0xc915096076c24383"
     },
     {
       "path": "doc/de/guides/clean-code-guide.md",
-      "hash": "0x80abf6d5770f9b6f"
+      "hash": "0x6bcdc9b02411e954"
     },
     {
       "path": "doc/de/guides/create-repo-guide.md",
-      "hash": "0xfaa7077e75cfe48c"
+      "hash": "0x01940bc72c15a292"
     },
     {
       "path": "doc/de/guides/develop-guide.md",
-      "hash": "0x8c16f063a23f7fe1"
+      "hash": "0x5eced9150c5ff197"
     },
     {
       "path": "doc/de/guides/dna-guide.md",
-      "hash": "0x645134cbf2da2503"
+      "hash": "0xa90d1c0ac2cfdb8c"
     },
     {
       "path": "doc/de/guides/index-guide.md",
-      "hash": "0x230f12d27acfef3d"
+      "hash": "0x7f15c8480df18dae"
     },
     {
       "path": "doc/de/guides/install-guide.md",
-      "hash": "0x85c82a519118c36a"
+      "hash": "0xd5c6ef9391758285"
     },
     {
       "path": "doc/de/guides/install-guide/install-brew-on-mac-guide.md",
@@ -115,23 +115,23 @@
     },
     {
       "path": "doc/de/guides/multi-language-guide.md",
-      "hash": "0x6a77ad15ad0febb5"
+      "hash": "0xa455a4b323162b72"
     },
     {
       "path": "doc/de/guides/readme-guide.md",
-      "hash": "0x8792f1620bf94189"
+      "hash": "0xf7db31031de2a15e"
     },
     {
       "path": "doc/en/guides/blog-guide.md",
-      "hash": "0x1e1cd71f876af1cf"
+      "hash": "0xe4580ea7f75b0a55"
     },
     {
       "path": "doc/en/guides/clean-code-guide.md",
-      "hash": "0x5a450a9c03fe6266"
+      "hash": "0x616eb6e8017796dc"
     },
     {
       "path": "doc/en/guides/create-repo-guide.md",
-      "hash": "0x8d7f4469ccf95200"
+      "hash": "0xf0ec367e6e528842"
     },
     {
       "path": "doc/en/guides/develop-guide.md",
@@ -143,7 +143,7 @@
     },
     {
       "path": "doc/en/guides/index-guide.md",
-      "hash": "0x54ad78cf7c812b75"
+      "hash": "0x0002a957de480e90"
     },
     {
       "path": "doc/en/guides/install-guide.md",
@@ -187,11 +187,27 @@
     },
     {
       "path": "doc/en/guides/multi-language-guide.md",
-      "hash": "0x10bd63ab6850de54"
+      "hash": "0x0066db436acfadc0"
     },
     {
       "path": "doc/en/guides/readme-guide.md",
-      "hash": "0xd929375ba6752105"
+      "hash": "0x6638d113d811af84"
+    },
+    {
+      "path": "doc/templates/blog/de/template.md",
+      "hash": "0x4f48f2db12a5ca19"
+    },
+    {
+      "path": "doc/templates/blog/en/template.md",
+      "hash": "0x72f96f22e4ee4851"
+    },
+    {
+      "path": "doc/templates/index-template.md",
+      "hash": "0x8249f77900b5a5d3"
+    },
+    {
+      "path": "doc/templates/readme-template.md",
+      "hash": "0x1e2cfe70283275bf"
     },
     {
       "path": "scripts/delete-feature-branch.js",

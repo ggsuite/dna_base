@@ -10,20 +10,21 @@ found in the LICENSE file in the root of this package.
 
 ## Content <!-- omit in toc -->
 
-- [Copy this file to tmp](#copy-this-file-to-tmp)
-- [Replace in this doc](#replace-in-this-doc)
-- [Create repo](#create-repo)
-- [Setup branch rules](#setup-branch-rules)
-- [Require deleting branches after merge](#require-deleting-branches-after-merge)
-- [Checkout and open the new project](#checkout-and-open-the-new-project)
-- [Rename template-project into my\_new\_repo](#rename-template-project-into-my_new_repo)
-  - [Call rename script](#call-rename-script)
-- [Edit pubspec.yaml](#edit-pubspecyaml)
-- [Commit the initial state](#commit-the-initial-state)
-- [Merge branch](#merge-branch)
-  - [Create and complete pull request](#create-and-complete-pull-request)
-  - [Delete feature branch](#delete-feature-branch)
-- [Publish the first time to pub.dev](#publish-the-first-time-to-pubdev)
+- [Create a new ggsuite repository](#create-a-new-dnagitorg-repository)
+  - [Copy this file to tmp](#copy-this-file-to-tmp)
+  - [Replace in this doc](#replace-in-this-doc)
+  - [Create repo](#create-repo)
+  - [Setup branch rules](#setup-branch-rules)
+  - [Require deleting branches after merge](#require-deleting-branches-after-merge)
+  - [Checkout and open the new project](#checkout-and-open-the-new-project)
+  - [Rename template-project into my\_new\_repo](#rename-template-project-into-my_new_repo)
+    - [Call rename script](#call-rename-script)
+  - [Edit pubspec.yaml](#edit-pubspecyaml)
+  - [Commit the initial state](#commit-the-initial-state)
+  - [Push branch](#push-branch)
+    - [Create and complete pull request](#create-and-complete-pull-request)
+    - [Delete feature branch](#delete-feature-branch)
+  - [Publish the first time to pub.dev](#publish-the-first-time-to-pubdev)
 
 ## Copy this file to tmp
 
@@ -72,7 +73,7 @@ Execute the following script to setup the branch rules shown below:
 node scripts/setup-github-repo.js
 ```
 
-Want to make up the changes manually? Dho this:
+Want to apply the changes manually? Do this:
 
 Open <https://github.com/https://github.com/ggsuite/my_new_repo>
 
@@ -187,7 +188,7 @@ git add .
 git commit -am "Rename template-project into my_new_repo"
 ```
 
-## Merge branch
+## Push branch
 
 In `vscode` at the `left side`, click `Source Control` icon.
 

@@ -6,22 +6,56 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# API Doc Guide
+# API Clean Code Guide
 
-How to document ggsuite projects. Documentation is functional, not
-"pretty": API understanding, reproducibility, traceability.
+## License Header
 
-## File layout
+- Take over the license header from other files
 
-- `// @license` header at the top of the file.
-- `// ####…` (hashes up to column 80) before each top-level class.
-- `// ….` (dots up to column 80) before every member, private ones
-  too.
-- Public API first, private members at the end behind a label block;
-  subgroups: short dot line + label.
+## General
+
+- Resolve todos and fixmes immediately, otherwise create tickets in Jira etc.
+- Do not add project management into the code
+- Start comments with an uppercase letter followed by lowercase letters
+- Write source code and comments in English
+
+## API documentation
+
+- Document classes and functions with one line
+- Write simple and understandable
+- Compress API documentation
+- Do not exceed the 80 character limit
+- Use the default API comment of the respective language (`///`, `/* ..*/`)
+- Document private members inline
+- Use 3rd person indicative without naming the function (`Returns ...`)
+- Reference other members in the respective language form (e.g. Dart: `[name]`)
+
+## Documentation of functions
+
+- Split functions into sections of about 3 - 10 lines
+- Comment the content of the section with one line of code
+- Allow readers to quickly skim and understand the code
+
+## Classes and functions
+
+- Separate important functions with `// .......`
+- Use one space between `//` and the text
+- List the constructors at the beginning
+- Place public methods at the top
+- Place private methods at the bottom
+- Separate public and private methods by a `Private` comment block
+- Split methods with more than 3 lines of code into private and public ones
+- Comment all public functions
+
+## Example constructors
+
+- Add an `example()` constructor to each class
+- It returns a fully preconfigured example instance
+- Allow configuring the example via named parameters
+
+## Example class
 
 ```dart
-// #############################################################################
 /// Represents a value of Type T in the memory.
 class GgValue<T> {
   // ...........................................................................
@@ -39,34 +73,3 @@ class GgValue<T> {
   T _value;
 }
 ```
-
-## Doc comments (`///`)
-
-- Public members: yes; private: usually not. Order: separator line,
-  `///`, declaration.
-- Write docs on the interface or base class; `@override` members do
-  not repeat them — Dart inherits doc comments.
-- One sentence on one line, **at most 3 lines** (wrap at column 80);
-  more than one only for caveats ("Important: …") and throws
-  (`Throws a [StateError] when …`). Exception: `- [name]` parameter
-  lists may be longer.
-- English, 3rd-person indicative, what instead of how: "Returns …" —
-  no "Will return", no imperative. Classes: one sentence.
-- Reference other members with `[name]`; constructor parameters:
-
-  ```dart
-  /// - [seed] The initial seed of the value.
-  /// - [name] is an optional identifier for the value.
-  ```
-
-## Inside bodies
-
-- No explanatory inline comments; only pragmas
-  (`// coverage:ignore-line`, `// ignore: …`).
-
-## Do not document
-
-- Trivialities: a getter `length` needs no explanation — if the lint
-  requires a doc comment, the plain variant is enough.
-- How the code does it — doc comments explain _what_ and _why_.
-- Personal notes, "maybe later" plans, FIXMEs.

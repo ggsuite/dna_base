@@ -8,29 +8,22 @@ found in the LICENSE file in the root of this package.
 
 # Index Guide
 
-Every repo has an `index.md` in its root. Claude reads it during
-ticket planning to decide which repos a ticket needs.
+## Create an index.md
 
-## Template
+- If not present:
+  - Copy `doc/templates/index-template.md` to `index.md`
+  - Replace `ggsuite` by the value from `dna/_vars.json`
 
-```markdown
-# <pkg>
+## Use index.md for planning
 
-<1–2 sentences: what this repo does.>
+- Update the index file before publishing each ticket
+- Read this index file before planning a ticket
+- If needed, also read the index files of all ocean repos
 
-## Domain / Goal
+## Update index.md before each publish
 
-<1–3 bullets: which problem space this repo owns.>
-
-## Interfaces
-
-- uses `<repo-a>`: <for what / via which API>
-- used by `<repo-b>`: <for what / via which API>
-```
-
-## Rules
-
-- As token-saving as possible: keywords beat sentences; no prose that
-  repeats the README.
-- Interfaces decide ticket membership — keep them precise and current.
-- When goal or interfaces change, the same ticket updates `index.md`.
+- Then decide which repos you need for your ticket
+- Write as short and token-saving as possible
+- Use keywords or bullet points instead of sentences
+- Then decide which repos you need for your ticket
+- Update changed files or interfaces

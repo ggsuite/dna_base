@@ -6,60 +6,34 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# Blog-Guide
+# Blog Guide
 
-Wie Blog-Posts in ggsuite-Repos geschrieben werden. Blog-Posts
-dokumentieren das Warum und Wie einer Änderung — der erzählende
-Begleiter zu Commits und Changelog-Einträgen.
+## Allgemeine Regeln
 
-## Ablage und Benennung
+- Für jedes Ticket:
+- Erstelle einen Blog Post vor dem Publishen
+- Orientiere dich Dich am [Publish Guide](./publish-guide.md)
 
-Eine Datei pro Post, pro Sprache und Jahr:
+## Kopiere das Template
 
-```text
-doc/en/blog/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
-doc/de/blog/<yyyy>/<yyyy>-<MM>-<dd>-<topic>.md
-```
+- Lege einen Jahresordner in `blog/de/2026` an, sofern nicht vorhanden
+- Denke dir einen zusammenfassenden Titel für das Ticket aus
+- Kopiere `doc/templates/blog/de/template.md` nach `<yyyy>-<mm>-<dd>-titel-kebab-case`
 
-Beispiel: `doc/en/blog/2026/2026-08-12-distribute-dna-via-npm.md`
+## Übersetze den Blog Post
 
-Beide Sprachen, gleicher Dateiname — siehe
-[Multi-Language-Guide](./multi-language-guide.md).
+- Übersetze den Titel des Blog Posts
+- Kopiere den deutschen Blog Post nach
+  `blog/en/2026/<yyyy>-<mm>-<dd>-titel-kebab-case`
+- Beachte den [Multi-Language-Guide](./multi-language-guide.md).
 
-## Umfang
+## Inhalt
 
-Ein bis zwei Bildschirmseiten — ein Digest, kein Protokoll. Bei
-größeren Refactorings gerne auch mehr.
-
-## Pflichtstruktur
-
-```markdown
-# <Titel>
-
-## Motivation
-
-<Warum, wozu, für wen — das größere Ziel, nicht nur der Auslöser.>
-
-## Strategie
-
-<Wie das Ziel erreicht wird. 3–7 Stichpunkte.>
-
-## Umsetzung 1, 2, …
-
-<Eine fokussierte Sektion pro Umsetzungsschritt / Arbeitspaket.>
-
-## Offene Punkte
-
-<Noch nicht fertig, bekannte Einschränkungen, vertagte
-Entscheidungen.>
-```
-
-## Regeln
-
-- Werden immer beim Publishen angelegt: Jedes Publish bekommt einen
-  Post über das aktuelle Ticket — siehe
-  [Publish-Guide](./publish-guide.md).
-- Ein Post pro Ticket; das Datum im Dateinamen ist das Publish-Datum.
-  Folge-Tickets bekommen eine neue Datei, keine wachsende alte.
-- Posts aus der Documentation-Sektion der README verlinken — siehe
-  [README-Guide](./readme-guide.md).
+- Orientiere Dich an der Struktur im kopierten Template
+- Fasse darin das Warum, Wie sowie das Ergebnis zusammen
+- Schreibe einfach und verständlich
+- Fasse den Inhalt auf 60-100 Zeilen zusammen
+- Schreibe bei komplexen Tickets auch länger
+- Brich Zeilen auf 80 Zeichen um
+- Bette Mermaid-Diagramme ein
+- Verwende Mermaid ``` markdown Blöcke
