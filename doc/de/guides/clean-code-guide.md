@@ -20,7 +20,7 @@ found in the LICENSE file in the root of this package.
 ## API-Dokumentationen
 
 - Dokumentiere Klassen und Funktionen mit einer Zeile
-- Schreibe, einfach und verständlich
+- Schreibe einfach und verständlich
 - Komprimiere Api-Dokumentationen
 - Überschreite nicht das 80 Zeichen Limit
 - Verwende den Default API Kommentar der jeweiligen Sprache (`///`, `/* ..*/`)
