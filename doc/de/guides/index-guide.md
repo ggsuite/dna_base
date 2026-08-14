@@ -12,18 +12,16 @@ found in the LICENSE file in the root of this package.
 
 - Sofern nicht vorhanden:
   - Kopiere `doc/templates/index-template.md` nach `index.md`
-  - Ersetze `ggsuite` durch den Wert aus `dna/_vars.json`
 
 ## Verwende index.md für die Planung
 
-- Aktualisiere die Index-Datei vor dem Publishen jedes Tickets
-- Lies diese Index-Datei vor der Planung eines Tickets
+- Lies die Index-Datei vor der Planung eines Tickets
 - Lies ggf. auch die Index Dateien aller Ocean Repos
+- Entscheide dann, welche Repos Du für Dein Ticket benötigst
 
 ## Aktualisiere index.md vor jedem Publishen
 
-- Entscheide dann, welche Repos Du für Dein Ticket benötigst
+- Aktualisiere die Index-Datei vor dem Publishen jedes Tickets
 - Schreibe so kurz und tokensparend wie möglich
 - Verwende Stichworte oder Stichpunkte statt Sätze
-- Entscheide dann, welche Repos Du für Dein Ticket benötigst
 - Aktualisiere geänderte Dateien oder Schnittstellen

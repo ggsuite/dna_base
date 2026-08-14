@@ -15,7 +15,7 @@
       "ecosystem": null,
       "resolvedVersion": null,
       "via": null,
-      "hash": "0x3d260003e4335d93"
+      "hash": "0xdf929642d5be31cb"
     }
   ],
   "claude": {
@@ -51,19 +51,27 @@
     },
     {
       "path": "doc/de/guides/blog-guide.md",
-      "hash": "0x61939b3318bdb3c9"
+      "hash": "0x0cb680560aebe126"
+    },
+    {
+      "path": "doc/de/guides/claude-dev-instructions-guide.md",
+      "hash": "0x8053039ec27b60c9"
     },
     {
       "path": "doc/de/guides/clean-code-guide.md",
-      "hash": "0x6bcdc9b02411e954"
+      "hash": "0x0e4f480a63a7d3b3"
     },
     {
       "path": "doc/de/guides/create-repo-guide.md",
       "hash": "0x01940bc72c15a292"
     },
     {
-      "path": "doc/de/guides/develop-guide.md",
-      "hash": "0x5eced9150c5ff197"
+      "path": "doc/de/guides/develop-with-ai-guide.md",
+      "hash": "0xec1c0ab2e78f8997"
+    },
+    {
+      "path": "doc/de/guides/develop-without-ai-guide.md",
+      "hash": "0x8053039ec27b60c9"
     },
     {
       "path": "doc/de/guides/dna-guide.md",
@@ -71,7 +79,7 @@
     },
     {
       "path": "doc/de/guides/index-guide.md",
-      "hash": "0x7f15c8480df18dae"
+      "hash": "0xf2bc8710b84be8d7"
     },
     {
       "path": "doc/de/guides/install-guide.md",
@@ -115,11 +123,15 @@
     },
     {
       "path": "doc/de/guides/multi-language-guide.md",
-      "hash": "0xa455a4b323162b72"
+      "hash": "0xaeac99d2eafb5538"
     },
     {
       "path": "doc/de/guides/readme-guide.md",
-      "hash": "0xf7db31031de2a15e"
+      "hash": "0x4cc61d3eb708b981"
+    },
+    {
+      "path": "doc/de/guides/review-guide.md",
+      "hash": "0xe6dffd70fe32fb12"
     },
     {
       "path": "doc/en/guides/blog-guide.md",
@@ -200,6 +212,10 @@
     {
       "path": "doc/templates/blog-template-en.md",
       "hash": "0x72f96f22e4ee4851"
+    },
+    {
+      "path": "doc/templates/class_template.dart",
+      "hash": "0x7b51e8e0492a184b"
     },
     {
       "path": "doc/templates/index-template.md",

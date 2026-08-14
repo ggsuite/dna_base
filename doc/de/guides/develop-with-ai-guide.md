@@ -50,7 +50,7 @@ gg do commit
 gg do push
 ```
 
-## Reviewe
+## Review
 
 ```bash
 gg do review

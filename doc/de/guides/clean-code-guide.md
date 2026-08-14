@@ -6,7 +6,7 @@ Use of this source code is governed by terms that can be
 found in the LICENSE file in the root of this package.
 -->
 
-# API Clean Code Guide
+# Clean Code Guide
 
 - Beachte die folgenden Regeln beim Erstellen von Code
 
@@ -18,25 +18,26 @@ found in the LICENSE file in the root of this package.
 
 - Erledige Todos, FixMes sofort, falls nicht lege Tickets in Jira etc. an
 - Füge kein Project-Management im Code hinzu
-- Beginne Kommentare mit Großbuchstaben gefolgt von Kleinbuchstaben
+- Schreibe offene Punkte in [doc/de|en/issues.md](issues.md)
+- Beginne Kommentare mit Großbuchstaben gefolgt von Space und Kleinbuchstaben
 - Verfasse Quellcode und Kommentare in Englisch
 
 ## API-Dokumentationen
 
-- Dokumentiere Klassen und Funktionen mit einer Zeile
+- Dokumentiere Klassen und Funktionen mit einer Zeile, wenn möglich
 - Schreibe einfach und verständlich
-- Komprimiere Api-Dokumentationen
 - Überschreite nicht das 80 Zeichen Limit
-- Verwende den Default API Kommentar der jeweiligen Sprache (`///`, `/* ..*/`)
+- Verwende den Default API Doc Syntax der jeweiligen Sprache (`///`, `/* ..*/`)
 - Dokumentiere private Member inline
 - Verwende 3rd-Person-Indikativ ohne Nennung des Funktionsnamen (`Returns ...`)
 - Referenziere andere Member in der jeweiligen Sprach-Form (z.B. Dart: `[name]`)
 
 ## Dokumentation von Funktionen
 
-- Teile Funktionen in Abschnitte von ca. 3 - 10 Zeilen ein
-- Kommentiere den Inhalt des Abschnitts mit einer Zeile Code
-- Ermögliche Lesern, den Code schnell überfliegen und verstehen zu können
+- Teile Funktionen in Blöcke von ca. 3 - 10 Zeilen ein
+- Fasse den Inhalt des Blocks mit einem einzeiligen Kommentar zusammen
+- Ermögliche damit Lesern, den Code schnell überfliegen und verstehen zu können
+- Wenn gut lesbar, lagere die Blöcke in eine dokumentierte Funktion aus
 
 ## Klassen und Funktionen
 
@@ -46,7 +47,7 @@ found in the LICENSE file in the root of this package.
 - Platziere öffentliche Methoden oben
 - Platziere private Methoden unten
 - Trenne öffentliche und private Methode durch einen `Private` Kommentarblock
-- Teile methoden mit mehr als 3 Zeilen Code in private und öffentliche
+- Teile Methoden mit mehr als 5 Zeilen Code in private und öffentliche auf
 - Kommentiere alle öffentlichen Funktionen
 
 ## Example Konstruktoren
@@ -54,24 +55,8 @@ found in the LICENSE file in the root of this package.
 - Füge zu jeder Klasse einen `example()` Konstruktor
 - Dieser liefert ein voll vorkonfigurierte Beispiel-Instanz
 - Ermögliche, das Example über benannte Parameter zu konfigurieren
+- Am Ende der Konstruktoren
 
 ## Beispiel-Klasse
 
-```dart
-/// Represents a value of Type T in the memory.
-class GgValue<T> {
-  // ...........................................................................
-  /// Sets the value and triggers an update on the stream.
-  set value(T newVal) { /* … */ }
-
-  // ######################
-  // Private
-  // ######################
-
-  // .............
-  // Stream
-
-  // ...........................................................................
-  T _value;
-}
-```
+Orientiere Dich an `doc/templates/class-template.dart`
