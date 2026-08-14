@@ -13,19 +13,8 @@ jobs:
     name: Quick check
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [24.x]
-
     steps:
       - uses: actions/checkout@v5
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v5
-        with:
-          node-version: ${{ matrix.node-version }}
-          # The job only runs npx, so no pnpm install is needed. Without this,
-          # setup-node auto-detects the packageManager field and requires pnpm.
-          package-manager-cache: false
-
+      # Uses the Node.js preinstalled on the runner image.
       - run: npx @tssuite/gg-js one did commit
