@@ -8,6 +8,6 @@ found in the LICENSE file in the root of this package.
 
 # Review-Heavy-Guide
 
-- Lies [review-guide.md](review-guide.md) und befolge ihn
+- Lies [ai-review-guide.md](./for-ai/ai-review-guide.md) und befolge ihn
 - Führe zusätzlich `/simplify` aus
 - Führe zusätzlich `/code-review` aus

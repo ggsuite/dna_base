@@ -1,7 +1,7 @@
 # dna_base
 
 Die Basis-DNA, die von vielen unserer Projekte verwendet wird
-(ggsuite, rljson, tssuite, ds_cdm, …). Sie liefert das
+(ggsuite, rljson, tssuite, …). Sie liefert das
 ökosystem-neutrale Fundament, das jedes Repo über
 [helix](https://github.com/ggsuite/helix) erbt:
 

@@ -8,23 +8,6 @@ found in the LICENSE file in the root of this package.
 
 # Create a new dnaGitOrg repository
 
-## Content <!-- omit in toc -->
-
-- [Create a new dnaGitOrg repository](#create-a-new-dnagitorg-repository)
-  - [Copy this file to tmp](#copy-this-file-to-tmp)
-  - [Replace in this doc](#replace-in-this-doc)
-  - [Create repo](#create-repo)
-  - [Setup branch rules](#setup-branch-rules)
-  - [Require deleting branches after merge](#require-deleting-branches-after-merge)
-  - [Checkout and open the new project](#checkout-and-open-the-new-project)
-  - [Rename template-project into my\_new\_repo](#rename-template-project-into-my_new_repo)
-    - [Call rename script](#call-rename-script)
-  - [Edit pubspec.yaml](#edit-pubspecyaml)
-  - [Commit the initial state](#commit-the-initial-state)
-  - [Push branch](#push-branch)
-    - [Create and complete pull request](#create-and-complete-pull-request)
-    - [Delete feature branch](#delete-feature-branch)
-  - [Publish the first time to pub.dev](#publish-the-first-time-to-pubdev)
 
 ## Copy this file to tmp
 
@@ -36,7 +19,7 @@ Go to your temp dir, e.g. `/tmp`
 
 Save the file there.
 
-## Replace in this doc
+## Replace in this document
 
 In the _whole_ file:
 
@@ -44,7 +27,7 @@ Replace `my_new_repo` by the name of your new repo
 
 Replace `A 60-70 char description of my new project` by a short project description
 
-## Create repo
+## Create a repo
 
 Open <https://github.com/dnaGitOrgUrl>
 
@@ -65,7 +48,7 @@ Select `gg_template_project` or `gg_template_with_cli`
 
 Click `Create Repository`
 
-## Setup branch rules
+## Set up the branch rules
 
 Execute the following script to setup the branch rules shown below:
 
@@ -126,7 +109,7 @@ Click `Create`
 
 When asked, Authenticate
 
-## Require deleting branches after merge
+## Let branches be deleted after the merge
 
 Open <https://github.com/dnaGitOrgUrl/my_new_repo>
 
@@ -143,7 +126,7 @@ Apply the following settings:
 - [x] `Allow auto-merge`
 - [x] `Automatically delete head branches`
 
-## Checkout and open the new project
+## Check out the new project and open it
 
 Checkout the project
 
@@ -167,13 +150,13 @@ git checkout -b rename-classes
 
 ## Rename template-project into my_new_repo
 
-### Call rename script
+### Call the rename script
 
 ```bash
 node scripts/rename-class.js gg_template_project my_new_repo
 ```
 
-## Edit pubspec.yaml
+## Adjust the pubspec.yaml
 
 Open `pubspec.yaml` and add the following changes:
 
@@ -188,11 +171,11 @@ git add .
 git commit -am "Rename template-project into my_new_repo"
 ```
 
-## Push branch
+## Push the branch
 
 In `vscode` at the `left side`, click `Source Control` icon.
 
-### Create and complete pull request
+### Create the pull request and complete it
 
 ```bash
 git push --set-upstream origin rename-classes
@@ -201,13 +184,13 @@ gh pr merge --auto --squash
 node ./scripts/wait-for-pr.js
 ```
 
-### Delete feature branch
+### Delete the feature branch
 
 ```bash
 node scripts/delete-feature-branch.js
 ```
 
-## Publish the first time to pub.dev
+## Publish for the first time to pub.dev
 
 ```bash
 dart pub publish

@@ -9,7 +9,7 @@ found in the LICENSE file in the root of this package.
 # Review
 
 - Complain when translations are missing.
-- See [multi-language-guide.md](multi-language-guide.md)
+- See [multi-language-guide.md](../multi-language-guide.md)
 - Complain in the review when a public API was changed and it was not
   added to the README.md
 

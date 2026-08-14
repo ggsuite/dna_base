@@ -62,7 +62,7 @@ Optional, für nicht-triviale Mechaniken
 
 <Ticket-Workflow, Commit-/Review-Regeln — auf
 [Develop-Guide](./develop-guide.md) und
-[Review-Guide](./review-guide.md) verlinken statt sie zu
+[Review-Guide](./for-ai/ai-review-guide.md) verlinken statt sie zu
 wiederholen.>
 
 ## Open Bugs

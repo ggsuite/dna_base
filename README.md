@@ -1,7 +1,6 @@
 # dna_base
 
-The base DNA used by many of our projects (ggsuite, rljson, tssuite,
-ds_cdm, …). It ships the ecosystem-neutral foundation every repo
+The base DNA used by many of our projects (ggsuite, rljson, tssuite, …). It ships the ecosystem-neutral foundation every repo
 inherits via [helix](https://github.com/ggsuite/helix):
 
 - `dna/dot-vscode/` — shared editor settings and extension
