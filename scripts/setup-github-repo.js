@@ -10,14 +10,24 @@ import { execSync } from 'child_process';
 import { writeFileSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
-import { blue, gray, green, red, yellow } from './functions/colors.js';
+import {
+  blue,
+  cyan,
+  gray,
+  green,
+  red,
+  white,
+  yellow,
+} from './functions/colors.js';
 import { runCommand } from './functions/run-command.js';
 
 // The name of the branch ruleset managed by this script
 const rulesetName = 'Default';
 
-// The status check that must pass before merging
-const requiredStatusCheck = 'Quick checks';
+// The status check that must pass before merging. It is provided by the
+// GitHub Actions app, i.e. not by "Any source".
+const requiredStatusCheck = 'Quick Check';
+const gitHubActionsAppId = 15368;
 
 // ...........................................................................
 // Make sure the GitHub CLI is available and authenticated
@@ -86,17 +96,25 @@ function ghApi(method, path, body) {
 
 // ...........................................................................
 // Only allow squash merges, auto merge and delete branches after merge
-function setupPullRequestSettings(slug) {
-  console.log(gray('Setup pull request settings'));
-
-  ghApi('PATCH', `repos/${slug}`, {
+function pullRequestSettings() {
+  return {
     allow_merge_commit: false,
     allow_squash_merge: true,
+    // Default commit message: "Pull request title"
+    squash_merge_commit_title: 'PR_TITLE',
+    squash_merge_commit_message: 'BLANK',
     allow_rebase_merge: false,
     allow_auto_merge: true,
     allow_update_branch: true,
     delete_branch_on_merge: true,
-  });
+  };
+}
+
+// ...........................................................................
+function setupPullRequestSettings(slug) {
+  console.log(gray('Setup pull request settings'));
+
+  ghApi('PATCH', `repos/${slug}`, pullRequestSettings());
 
   console.log(green('✅ Pull request settings applied.'));
 }
@@ -130,7 +148,12 @@ function ruleset(requireReview) {
         type: 'required_status_checks',
         parameters: {
           strict_required_status_checks_policy: true,
-          required_status_checks: [{ context: requiredStatusCheck }],
+          required_status_checks: [
+            {
+              context: requiredStatusCheck,
+              integration_id: gitHubActionsAppId,
+            },
+          ],
         },
       },
     ],
@@ -162,11 +185,26 @@ function setupBranchRules(slug, requireReview) {
 }
 
 // ...........................................................................
+// Print the repo and the settings without changing anything
+function dryRun(slug, requireReview) {
+  console.log(cyan(slug));
+  console.log(white(JSON.stringify(pullRequestSettings(), null, 2)));
+  console.log(white(JSON.stringify(ruleset(requireReview), null, 2)));
+}
+
+// ...........................................................................
 function main() {
   const requireReview = process.argv.includes('--require-review');
+  const isDryRun = !process.argv.includes('--apply');
 
   checkGhCli();
   const slug = repoSlug();
+
+  if (isDryRun) {
+    dryRun(slug, requireReview);
+    return;
+  }
+
   console.log(blue(`https://github.com/${slug}`));
 
   setupPullRequestSettings(slug);
