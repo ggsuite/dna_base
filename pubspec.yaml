@@ -1,6 +1,6 @@
 name: dna_base
 description: "Shared base DNA: configs, docs, scripts and agent skills for repos"
-version: 0.3.0
+version: 0.3.1
 repository: https://github.com/ggsuite/dna_base.git
 
 environment:
